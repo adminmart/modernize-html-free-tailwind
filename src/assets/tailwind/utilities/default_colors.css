@@ -1,0 +1,44 @@
+[data-bs-theme="light"] .DEFAULT_THEME{
+    --color-primary: #5D87FF;
+    --color-secondary: #49BEFF;
+    --color-lightprimary:#ECF2FF;
+    --color-lightsecondary:#E8F7FF;
+    --color-info:#539BFF;
+    --color-success:#13DEB9;
+    --color-warning:#FFAE1F;
+    --color-error:#FA896B;
+    --color-lightsuccess:#E6FFFA;
+    --color-lighterror:#FDEDE8;
+    --color-lightinfo:#EBF3FE;
+    --color-lightwarning:#FEF5E5;
+    --color-btnprimary-hover-bg:#4f73d9;
+    --color-btnsecondary-hover-bg:#3ea2d9;
+    --color-btnsuccess-hover-bg:#10bd9d;
+    --color-btnwarning-hover-bg:#d9941a;
+    --color-btnerror-hover-bg:#d5745b;
+    --color-btninfo-hover-bg:#4784d9;
+    --color-btndark-hover-bg:#4a5363;
+    --color-btnlight-hover-bg:#d1d4d6;
+    --color-darkinfo:#223662;
+    --color-white:#fff ;
+	--color-dark:#202936;
+    --color-border:#e5eaef;
+    --color-darkborder:#333F55;
+    --color-heading:#2a3547;
+    --color-lightgray:#F6F9FC;
+    --color-body:#eaeff4;
+    --color-transparent:transparent;
+    --color-muted:#5A6A85;
+    --color-gray100:#ebf1f6;
+
+}
+
+/* [data-bs-theme="light"][data-color-theme="Blue_Theme"]:root{
+    --color-primary: #5D87FF;
+    --color-secondary: #49BEFF;
+    --color-lightprimary:#ECF2FF;
+    --color-lightsecondary:#E8F7FF;
+    --color-darkprimary:#26334A;
+    --color-darksecondary:#24384A;
+    
+} */

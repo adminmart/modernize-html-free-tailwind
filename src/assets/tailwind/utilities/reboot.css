@@ -1,0 +1,75 @@
+img,
+video {
+  max-width: fit-content;
+  height: auto;
+}
+
+.hs-overlay-backdrop{
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.btn-check {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+
+.cardwithborder .card {
+    box-shadow: none;
+    border: 1px solid #ebf1f6;
+}
+.DARK_DEFUALT_THEME.cardwithborder .card {
+    box-shadow: none;
+    border: 1px solid var(--color-borderColor);
+}
+.sidebar-scroll {
+    height: calc(100% - 50px);
+}
+.skin-colors li.active i {
+    opacity: 1 !important;
+}
+.dark-skin-colors li.active i {
+    opacity: 1 !important;
+}
+.light-logo {
+    display: none;
+}
+body.DARK_DEFUALT_THEME .light-logo {
+    display: block;
+}
+body.DARK_DEFUALT_THEME .dark-logo {
+    display: none;
+}
+body.DARK_DEFUALT_THEME.cardborder .cardshadow {
+    color: white !important;
+}
+body.DARK_DEFUALT_THEME.cardshadow .cardborder {
+    color: white !important;
+}
+body.DARK_DEFUALT_THEME.fullwidth .boxed-width {
+    color: white !important;
+}
+body.DARK_DEFUALT_THEME.boxed .full-width {
+    color: white !important;
+}
+body.DARK_DEFUALT_THEME.fullsidebar .customizer-sidebartoggler {
+    color: white !important;
+}
+body.DARK_DEFUALT_THEME.minisidebar .fullsidebar {
+    color: white !important;
+}
+body.DARK_DEFUALT_THEME .card-option:not(.activecard) {
+    color: white !important;
+}
+body.DARK_DEFUALT_THEME .layout-option:not(.activelayout) {
+    color: white !important;
+}
+body.DARK_DEFUALT_THEME .side-layout:not(.sidefull) {
+    color: white !important;
+}

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html data-hs-theme-switch  lang="en" dir="ltr" >
+
+<head>
+	@@include("partials/head.html")
+	<title>Modernize TailwindCSS HTML Admin Template</title>
+</head>
+
+<body class="DEFAULT_THEME bg-white">
+	<main>
+		<!--start the project-->
+		<div id="main-wrapper" class="overflow-x-hidden flex">
+			<aside
+				class="with-vertical w-[270px] left-sidebar bg-white h-screen flex-shrink-0 border-r-[1px] border-border z-40  transition-all duration-300 fixed" >
+				@@include("partials/sidebar.html")
+			</aside>
+			<div class="flex flex-col flex-1 w-full page-wrapper">
+
+				<!--  Header Start -->
+				<header class="flex flex-wrap md:justify-start md:flex-nowrap w-full text-sm   py-4">
+					<div class="with-vertical w-full">@@include("./partials/header.html")</div>
+				</header>
+				<!--  Header End -->
+
+				<!-- Main Content -->
+				<main class="h-full overflow-y-auto  max-w-full  pt-4">
+					<div class="container full-container py-5 flex flex-col gap-6">
+                      <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-6 gap-x-0 lg:gap-y-0 gap-y-6">
+                         <div class="col-span-2">
+							<div class="card">
+								<div class="card-body">
+									<div class="sm:flex block justify-between mb-5">
+										<h4 class="text-heading text-lg font-semibold sm:mb-0 mb-2">Sales Overview</h4>
+										<select name="cars" id="cars" class=" border-border text-muted rounded-md text-sm border-[1px] focus:ring-0 sm:w-auto w-full">
+											<option value="volvo">March2023</option>
+											<option value="saab">April2023</option>
+											<option value="mercedes">May2023</option>
+											<option value="audi">June2023</option>
+										  </select>
+									</div>
+									<div id="chart"></div>
+								</div>
+							</div>
+						 </div>
+                         
+						 <div class="flex flex-col gap-6">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="text-heading text-lg font-semibold mb-5">Yearly Breakup</h4>
+									<div class="flex gap-6 items-center justify-between">
+                                    <div class="flex flex-col gap-4">
+										<h3 class="text-[21px] font-semibold text-heading">$36,358</h3>
+										<div class="flex items-center gap-1">
+                                           <span class="flex items-center justify-center w-[20px] h-[20px] rounded-full bg-lightsuccess">
+											<i class="ti ti-arrow-up-left text-success"></i>
+										   </span>
+										   <p class="text-heading text-sm font-normal ">+9%</p>
+										   <p class="text-muted text-sm font-normal">last year</p>
+										</div>
+										<div class="flex">
+                                           <div class="flex gap-2 items-center">
+											<span class="w-[8px] h-[8px] rounded-full bg-primary"></span>
+											<p class="text-muted font-normal text-xs">2023</p>
+										   </div>
+                                           <div class="flex gap-2 items-center">
+											<span class="w-[8px] h-[8px] rounded-full bg-lightprimary"></span>
+											<p class="text-muted font-normal text-xs">2023</p>
+										   </div>
+										</div>
+									</div>
+									<div class="flex  items-center">
+										<div id="breakup"></div>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="flex gap-6 items-center justify-between">
+                                    <div class="flex flex-col gap-5">
+										<h4 class="text-heading text-lg font-semibold">Monthly Earnings</h4>
+										<div class="flex flex-col gap-[18px]">
+										<h3 class="text-[21px] font-semibold text-heading">$6,820</h3>
+										<div class="flex items-center gap-1">
+                                           <span class="flex items-center justify-center w-[20px] h-[20px] rounded-full bg-lighterror">
+											<i class="ti ti-arrow-down-right text-error"></i>
+										   </span>
+										   <p class="text-heading text-sm font-normal ">+9%</p>
+										   <p class="text-muted text-sm font-normal">last year</p>
+										</div>
+									</div>
+									</div>
+									
+										<div class="w-[44px] h-[44px] flex justify-center items-center rounded-full bg-secondary text-white self-start">
+											<i class="ti ti-currency-dollar text-xl"></i>
+										</div>
+							
+									</div>
+								</div>
+								<div id="earning"></div>
+							</div>
+						 </div>
+
+
+					  </div>
+                       <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-6 gap-x-0 lg:gap-y-0 gap-y-6">
+                          <div class="card">
+							<div class="card-body">
+							<h4 class="text-heading text-lg font-semibold mb-6">Recent Transactions</h4>
+							<ul class="timeline-widget relative">
+                               <li class="timeline-item flex relative overflow-hidden">
+                                   <div class="timeline-time text-heading text-sm min-w-[90px] py-[6px] pr-4 text-end">
+                                       9:30 am
+								   </div>
+								   <div class="timeline-badge-wrap flex flex-col items-center ">
+                                     <div class="timeline-badge w-[12px] h-[12px] rounded-full shrink-0 bg-transparent border-2 border-primary my-[10px]">
+									 </div>
+									 <div class="timeline-badge-border block h-full w-[1px] bg-gray100"></div>
+								   </div>
+								   <div class="timeline-desc py-[6px] px-4">
+									<p class="text-heading text-sm font-normal">Payment received from John Doe of $385.90</p>
+								   </div>
+							   </li>
+                               <li class="timeline-item flex relative overflow-hidden">
+                                   <div class="timeline-time text-heading min-w-[90px] py-[6px] text-sm pr-4 text-end">
+                                       10:00 am
+								   </div>
+								   <div class="timeline-badge-wrap flex flex-col items-center ">
+                                     <div class="timeline-badge w-[12px] h-[12px] rounded-full shrink-0 bg-transparent border-2 border-info my-[10px]">
+									 </div>
+									 <div class="timeline-badge-border block h-full w-[1px] bg-gray100"></div>
+								   </div>
+								   <div class="timeline-desc py-[6px] px-4">
+									<p class="text-heading text-sm font-semibold">New sale recorded</p>
+									<a href="javascript:void('')" class="text-primary">#ML-3467</a>
+								   </div>
+							   </li>
+
+                               <li class="timeline-item flex relative overflow-hidden">
+								<div class="timeline-time text-heading min-w-[90px] text-sm py-[6px] pr-4 text-end">
+									12:00 am
+								</div>
+								<div class="timeline-badge-wrap flex flex-col items-center ">
+								  <div class="timeline-badge w-[12px] h-[12px] rounded-full shrink-0 bg-transparent border-2 border-success my-[10px]">
+								  </div>
+								  <div class="timeline-badge-border block h-full w-[1px] bg-gray100"></div>
+								</div>
+								<div class="timeline-desc py-[6px] px-4">
+								 <p class="text-heading text-sm font-normal">Payment was made of $64.95 to Michael</p>
+								</div>
+							</li>
+							
+							<li class="timeline-item flex relative overflow-hidden">
+								<div class="timeline-time text-heading min-w-[90px] text-sm py-[6px] pr-4 text-end">
+									9:30 am
+								</div>
+								<div class="timeline-badge-wrap flex flex-col items-center ">
+								  <div class="timeline-badge w-[12px] h-[12px] rounded-full shrink-0 bg-transparent border-2 border-warning my-[10px]">
+								  </div>
+								  <div class="timeline-badge-border block h-full w-[1px] bg-gray100"></div>
+								</div>
+								<div class="timeline-desc py-[6px] px-4">
+								 <p class="text-heading text-sm font-semibold">New sale recorded</p>
+								 <a href="javascript:void('')" class="text-primary">#ML-3467</a>
+								</div>
+							</li>
+
+							<li class="timeline-item flex relative overflow-hidden">
+								<div class="timeline-time text-heading text-sm min-w-[90px] py-[6px] pr-4 text-end">
+									9:30 am
+								</div>
+								<div class="timeline-badge-wrap flex flex-col items-center ">
+								  <div class="timeline-badge w-[12px] h-[12px] rounded-full shrink-0 bg-transparent border-2 border-error my-[10px]">
+								  </div>
+								  <div class="timeline-badge-border block h-full w-[1px] bg-gray100"></div>
+								</div>
+								<div class="timeline-desc py-[6px] px-4">
+								 <p class="text-heading text-sm font-semibold">New sale recorded</p>
+								</div>
+							</li>
+							<li class="timeline-item flex relative overflow-hidden">
+								<div class="timeline-time text-heading text-sm min-w-[90px] py-[6px] pr-4 text-end">
+									12:00 am
+								</div>
+								<div class="timeline-badge-wrap flex flex-col items-center ">
+								  <div class="timeline-badge w-[12px] h-[12px] rounded-full shrink-0 bg-transparent border-2 border-success my-[10px]">
+								  </div>
+								  <div class="timeline-badge-border block h-full w-[1px] bg-gray100"></div>
+								</div>
+								<div class="timeline-desc py-[6px] px-4">
+								 <p class="text-heading text-sm font-normal">Payment Done</p>
+								</div>
+							</li>							
+							   
+							</ul>
+							</div>
+						  </div>
+						  <div class="col-span-2">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="text-heading text-lg font-semibold mb-6">Recent Transaction</h4>
+									<div class="relative overflow-x-auto">
+										<!-- table -->
+										<table class="text-left w-full whitespace-nowrap">
+											<thead class="text-gray-700">
+												<tr>
+													<th scope="col" class="p-4 font-semibold text-heading text-sm">Id</th>
+													<th scope="col" class="p-4 font-semibold text-heading text-sm">Assigned</th>
+													<th scope="col" class="p-4 font-semibold text-heading text-sm">Name</th>
+													<th scope="col" class="p-4 font-semibold text-heading text-sm">Priority</th>
+													<th scope="col" class="p-4 font-semibold text-heading text-sm">Budget</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="p-4 font-semibold text-heading text-sm ">1</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+                                                          <div class="flex flex-col gap-1">
+                                                              <h3 class="text-sm-font-semibold text-heading">Sunil Joshi</h3>
+															  <span class="font-normal text-sm text-muted">Web Designer</span>
+														  </div>
+													</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+														<span class="font-normal text-sm text-muted">Elite Admin</span>
+													</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+                                                        <button class="pt-[2px] pb-[3px] px-[11px] rounded-[15px] pointer-events-none text-sm font-semibold text-white bg-primary">Low</button>
+													</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+														<span class="font-semibold text-base text-heading">$3.9</span>
+													</td>
+												</tr>
+												<tr>
+													<td class="p-4 font-semibold text-heading text-sm ">2</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+                                                          <div class="flex flex-col gap-1">
+                                                              <h3 class="text-sm-font-semibold text-heading">Andrew McDownland</h3>
+															  <span class="font-normal text-sm text-muted">Project Manager</span>
+														  </div>
+													</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+														<span class="font-normal text-sm text-muted">Real Homes WP Theme</span>
+													</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+                                                        <button class="pt-[2px] pb-[3px] px-[11px] rounded-[15px] pointer-events-none text-sm font-semibold text-white bg-secondary">Medium</button>
+													</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+														<span class="font-semibold text-base text-heading">$24.5k</span>
+													</td>
+												</tr>
+												<tr>
+													<td class="p-4 font-semibold text-heading text-sm ">3</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+                                                          <div class="flex flex-col gap-1">
+                                                              <h3 class="text-sm-font-semibold text-heading">Christopher Jamil</h3>
+															  <span class="font-normal text-sm text-muted">Project Manager</span>
+														  </div>
+													</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+														<span class="font-normal text-sm text-muted">MedicalPro WP Theme</span>
+													</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+                                                        <button class="pt-[2px] pb-[3px] px-[11px] rounded-[15px] pointer-events-none text-sm font-semibold text-white bg-error">High</button>
+													</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+														<span class="font-semibold text-base text-heading">$12.8k</span>
+													</td>
+												</tr>
+												<tr>
+													<td class="p-4 font-semibold text-heading text-sm ">4</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+                                                          <div class="flex flex-col gap-1">
+                                                              <h3 class="text-sm-font-semibold text-heading">Nirav Joshi</h3>
+															  <span class="font-normal text-sm text-muted">Frontend Engineer</span>
+														  </div>
+													</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+														<span class="font-normal text-sm text-muted">Hosting Press HTML</span>
+													</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+                                                        <button class="pt-[2px] pb-[3px] px-[11px] rounded-[15px] pointer-events-none text-sm font-semibold text-white bg-success">Critical</button>
+													</td>
+													<td class="p-4 font-semibold text-heading text-sm">
+														<span class="font-semibold text-base text-heading">$2.4k</span>
+													</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>									
+								</div>
+							</div>
+						  </div>
+					   </div>
+					   <div class="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 gap-6">
+                          <div class="card rounded-md overflow-hidden">
+							<div class="relative">
+								<a href="javascript:void(0)">
+									<img src="./assets/images/products/product-1.jpg" alt="product_img" class="w-full">
+								</a>
+								<a href="javascript:void(0)" class="bg-primary w-[32px] h-[32px] flex justify-center items-center text-white rounded-full absolute bottom-0 right-0 mr-4 -mb-3">
+									<i class="ti ti-basket text-base"></i>
+								</a>
+							</div>
+							<div class="card-body">
+								<h6 class="text-base font-semibold text-heading mb-1">Boat Headphone</h6>
+								<div class="flex justify-between">
+									<div class="flex gap-2 items-center">
+                                        <h6 class="text-base text-heading font-semibold">$50</h6>
+										<span class="text-muted text-sm">
+											<del>$65</del>
+										</span>
+									</div>
+									<ul class="list-none flex gap-1">
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+									</ul>
+								</div>
+							</div>
+						  </div>
+                          <div class="card rounded-md overflow-hidden">
+							<div class="relative">
+								<a href="javascript:void(0)">
+									<img src="./assets/images/products/product-2.jpg" alt="product_img" class="w-full">
+								</a>
+								<a href="javascript:void(0)" class="bg-primary w-[32px] h-[32px] flex justify-center items-center text-white rounded-full absolute bottom-0 right-0 mr-4 -mb-3">
+									<i class="ti ti-basket text-base"></i>
+								</a>
+							</div>
+							<div class="card-body">
+								<h6 class="text-base font-semibold text-heading mb-1">MacBook Air Pro</h6>
+								<div class="flex justify-between">
+									<div class="flex gap-2 items-center">
+                                        <h6 class="text-base text-heading font-semibold">$650</h6>
+										<span class="text-muted text-sm">
+											<del>$900</del>
+										</span>
+									</div>
+									<ul class="list-none flex gap-1">
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+									</ul>
+								</div>
+							</div>
+						  </div>
+                          <div class="card rounded-md overflow-hidden">
+							<div class="relative">
+								<a href="javascript:void(0)">
+									<img src="./assets/images/products/product-3.jpg" alt="product_img" class="w-full">
+								</a>
+								<a href="javascript:void(0)" class="bg-primary w-[32px] h-[32px] flex justify-center items-center text-white rounded-full absolute bottom-0 right-0 mr-4 -mb-3">
+									<i class="ti ti-basket text-base"></i>
+								</a>
+							</div>
+							<div class="card-body">
+								<h6 class="text-base font-semibold text-heading mb-1">Red Valvet Dress</h6>
+								<div class="flex justify-between">
+									<div class="flex gap-2 items-center">
+                                        <h6 class="text-base text-heading font-semibold">$150</h6>
+										<span class="text-muted text-sm">
+											<del>$200</del>
+										</span>
+									</div>
+									<ul class="list-none flex gap-1">
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+									</ul>
+								</div>
+							</div>
+						  </div>
+                          <div class="card rounded-md overflow-hidden">
+							<div class="relative">
+								<a href="javascript:void(0)">
+									<img src="./assets/images/products/product-4.jpg" alt="product_img" class="w-full">
+								</a>
+								<a href="javascript:void(0)" class="bg-primary w-[32px] h-[32px] flex justify-center items-center text-white rounded-full absolute bottom-0 right-0 mr-4 -mb-3">
+									<i class="ti ti-basket text-base"></i>
+								</a>
+							</div>
+							<div class="card-body">
+								<h6 class="text-base font-semibold text-heading mb-1">Cute Soft Teddybear</h6>
+								<div class="flex justify-between">
+									<div class="flex gap-2 items-center">
+                                        <h6 class="text-base text-heading font-semibold">$285</h6>
+										<span class="text-muted text-sm">
+											<del>$345</del>
+										</span>
+									</div>
+									<ul class="list-none flex gap-1">
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+                                      <li>
+										<a href="javascript:void(0)" >
+											<i class="ti ti-star text-warning text-sm"></i>
+										</a>
+									  </li>
+									</ul>
+								</div>
+							</div>
+						  </div>
+					   </div>
+					   <footer>
+						<p class="text-base text-muted font-normal p-3 text-center">
+							Design and Developed by <a href="#" class="text-primary underline">AdminMart.com</a>
+						</p>
+					   </footer>
+					</div>
+
+
+				</main>
+				<!-- Main Content End -->
+				<div class="dark-transparent sidebartoggler top-0 left-0 w-full"></div>
+			</div>
+		</div>
+		<!--end of project-->
+	</main>
+
+
+	@@include("partials/scripts.html")
+</body>
+
+</html>

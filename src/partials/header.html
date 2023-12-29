@@ -1,0 +1,35 @@
+<div class="w-full mx-auto px-4 md:px-6 lg:px-4" aria-label="Global">
+    <div class="relative md:flex md:items-center md:justify-between">
+            <div class="overflow-hidden max-h-[75vh] w-full">
+                <div class="flex justify-between">
+                    <div class="flex gap-2">
+                        <ul class="icon-nav flex items-center">
+                            <li class="relative px-3 xl:hidden">
+                                <a class="text-xl  icon-hover cursor-pointer text-link dark:text-darklink sidebartoggler"
+                                    id="headerCollapse" href="javascript:void(0)">
+                                    <i class="ti ti-menu-2 relative z-[1]"></i>
+                                </a>
+                            </li>
+                        <!-- Notifications menu -->
+                        <li class="relative">
+                            @@include("./header-components/dd-notification.html")
+                        </li>
+                        </ul>
+
+                    </div>
+
+                    <ul class="flex icon-nav items-center">
+
+                        <button class="btn font-medium hover:bg-primaryhover py-[8px]">Download Free</button>
+
+                        <!-- Profile menu -->
+                        <li class="relative z-[2]">
+                            @@include("./header-components/dd-profile.html")
+                        </li>
+                    </ul>
+                </div>
+        
+        </div>
+    </div>
+
+</div>
