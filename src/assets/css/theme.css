@@ -1270,12 +1270,28 @@ select {
   background-color: var(--color-lighterror);
 }
 
+.bg-lightgray {
+  background-color: var( --color-lightgray);
+}
+
+.bg-lightinfo {
+  background-color: var(--color-lightinfo);
+}
+
 .bg-lightprimary {
   background-color: var(--color-lightprimary);
 }
 
+.bg-lightsecondary {
+  background-color: var(--color-lightsecondary);
+}
+
 .bg-lightsuccess {
   background-color: var(--color-lightsuccess);
+}
+
+.bg-lightwarning {
+  background-color: var(--color-lightwarning);
 }
 
 .bg-primary {
@@ -1300,22 +1316,6 @@ select {
 
 .bg-white {
   background-color: var(--color-white);
-}
-
-.bg-lightsecondary {
-  background-color: var(--color-lightsecondary);
-}
-
-.bg-lightwarning {
-  background-color: var(--color-lightwarning);
-}
-
-.bg-lightinfo {
-  background-color: var(--color-lightinfo);
-}
-
-.bg-lightgray {
-  background-color: var( --color-lightgray);
 }
 
 .object-cover {
@@ -1615,33 +1615,13 @@ select {
 }
 
 
-.hover\:bg-darkhover:hover {
-  background-color: var(--color-btndark-hover-bg);
-}
-
-
 .hover\:bg-error:hover {
   background-color: var(--color-error);
 }
 
 
-.hover\:bg-errorhover:hover {
-  background-color: var(--color-btnerror-hover-bg);
-}
-
-
 .hover\:bg-info:hover {
   background-color: var(--color-info);
-}
-
-
-.hover\:bg-infohover:hover {
-  background-color: var(--color-btninfo-hover-bg);
-}
-
-
-.hover\:bg-lighthover:hover {
-  background-color: var(--color-btnlight-hover-bg);
 }
 
 
@@ -1655,28 +1635,13 @@ select {
 }
 
 
-.hover\:bg-primaryhover:hover {
-  background-color: var(--color-btnprimary-hover-bg);
-}
-
-
 .hover\:bg-secondary:hover {
   background-color: var(--color-secondary);
 }
 
 
-.hover\:bg-secondaryhover:hover {
-  background-color: var(--color-btnsecondary-hover-bg);
-}
-
-
 .hover\:bg-success:hover {
   background-color: var(--color-success);
-}
-
-
-.hover\:bg-successhover:hover {
-  background-color: var(--color-btnsuccess-hover-bg);
 }
 
 
@@ -1690,8 +1655,43 @@ select {
 }
 
 
-.hover\:bg-warninghover:hover {
-  background-color: var(--color-btnwarning-hover-bg);
+.hover\:bg-darkprimary:hover {
+  background-color: var(--color-darkprimary);
+}
+
+
+.hover\:bg-darkemphasis:hover {
+  background-color: var(--color-darkemphasis);
+}
+
+
+.hover\:bg-darkerror:hover {
+  background-color: var(--color-darkerror);
+}
+
+
+.hover\:bg-darkinfo:hover {
+  background-color: var(--color-darkinfo);
+}
+
+
+.hover\:bg-darksecondary:hover {
+  background-color: var(--color-darksecondary);
+}
+
+
+.hover\:bg-darksuccess:hover {
+  background-color: var(--color-darksuccess);
+}
+
+
+.hover\:bg-darkwarning:hover {
+  background-color: var(--color-darkwarning);
+}
+
+
+.hover\:bg-lightemphasis:hover {
+  background-color: var(--color-lightemphasis);
 }
 
 
@@ -1705,13 +1705,13 @@ select {
 }
 
 
-.hover\:text-primaryhover:hover {
-  color: var(--color-btnprimary-hover-bg);
+.hover\:text-white:hover {
+  color: var(--color-white);
 }
 
 
-.hover\:text-white:hover {
-  color: var(--color-white);
+.hover\:text-darkprimary:hover {
+  color: var(--color-darkprimary);
 }
 
 
@@ -2090,26 +2090,23 @@ select {
     --color-lighterror:#FDEDE8;
     --color-lightinfo:#EBF3FE;
     --color-lightwarning:#FEF5E5;
-    --color-btnprimary-hover-bg:#4f73d9;
-    --color-btnsecondary-hover-bg:#3ea2d9;
-    --color-btnsuccess-hover-bg:#10bd9d;
-    --color-btnwarning-hover-bg:#d9941a;
-    --color-btnerror-hover-bg:#d5745b;
-    --color-btninfo-hover-bg:#4784d9;
-    --color-btndark-hover-bg:#4a5363;
-    --color-btnlight-hover-bg:#d1d4d6;
-    --color-darkinfo:#223662;
+    --color-darkprimary:#4f73d9;
+    --color-darksecondary:#3ea2d9;
+    --color-darksuccess:#10bd9d;
+    --color-darkwarning:#d9941a;
+    --color-darkerror:#d5745b;
+    --color-darkinfo:#4784d9;
+    --color-darkemphasis:#4a5363;
+    --color-lightemphasis:#d1d4d6;
     --color-white:#fff ;
 	--color-dark:#202936;
     --color-border:#e5eaef;
-    --color-darkborder:#333F55;
     --color-heading:#2a3547;
     --color-lightgray:#F6F9FC;
     --color-body:#eaeff4;
     --color-transparent:transparent;
     --color-muted:#5A6A85;
     --color-gray100:#ebf1f6;
-
 }
 
 
@@ -2169,7 +2166,7 @@ video {
 }
 .DARK_DEFUALT_THEME.cardwithborder .card {
     box-shadow: none;
-    border: 1px solid var(--color-borderColor);
+    border: 1px solid var(--color-border);
 }
 .sidebar-scroll {
     height: calc(100% - 50px);

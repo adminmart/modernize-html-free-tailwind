@@ -11,25 +11,22 @@
     --color-lighterror:#FDEDE8;
     --color-lightinfo:#EBF3FE;
     --color-lightwarning:#FEF5E5;
-    --color-btnprimary-hover-bg:#4f73d9;
-    --color-btnsecondary-hover-bg:#3ea2d9;
-    --color-btnsuccess-hover-bg:#10bd9d;
-    --color-btnwarning-hover-bg:#d9941a;
-    --color-btnerror-hover-bg:#d5745b;
-    --color-btninfo-hover-bg:#4784d9;
-    --color-btndark-hover-bg:#4a5363;
-    --color-btnlight-hover-bg:#d1d4d6;
-    --color-darkinfo:#223662;
+    --color-darkprimary:#4f73d9;
+    --color-darksecondary:#3ea2d9;
+    --color-darksuccess:#10bd9d;
+    --color-darkwarning:#d9941a;
+    --color-darkerror:#d5745b;
+    --color-darkinfo:#4784d9;
+    --color-darkemphasis:#4a5363;
+    --color-lightemphasis:#d1d4d6;
     --color-white:#fff ;
 	--color-dark:#202936;
     --color-border:#e5eaef;
-    --color-darkborder:#333F55;
     --color-heading:#2a3547;
     --color-lightgray:#F6F9FC;
     --color-body:#eaeff4;
     --color-transparent:transparent;
     --color-muted:#5A6A85;
     --color-gray100:#ebf1f6;
-
 }
 
