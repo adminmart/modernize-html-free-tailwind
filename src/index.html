@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-hs-theme-switch  lang="en" dir="ltr" >
+<html   lang="en" >
 
 <head>
 	@@include("partials/head.html")
@@ -10,15 +10,15 @@
 	<main>
 		<!--start the project-->
 		<div id="main-wrapper" class="overflow-x-hidden flex">
-			<aside
-				class="with-vertical w-[270px] left-sidebar bg-white h-screen flex-shrink-0 border-r-[1px] border-border z-40  transition-all duration-300 fixed" >
+			<aside id="application-sidebar-brand"
+				class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full  transform hidden xl:block xl:translate-x-0 xl:end-auto xl:bottom-0 fixed top-0 with-vertical h-screen z-[999] flex-shrink-0 border-r-[1px] w-[270px] border-border dark:border-darkborder bg-white dark:bg-dark left-sidebar   transition-all duration-300" >
 				@@include("partials/sidebar.html")
 			</aside>
 			<div class="flex flex-col flex-1 w-full page-wrapper">
 
 				<!--  Header Start -->
-				<header class="flex flex-wrap md:justify-start md:flex-nowrap w-full text-sm   py-4">
-					<div class="with-vertical w-full">@@include("./partials/header.html")</div>
+				<header class="flex  justify-start flex-nowrap w-full text-sm py-4">
+					<div class=" w-full">@@include("./partials/header.html")</div>
 				</header>
 				<!--  Header End -->
 
@@ -108,7 +108,7 @@
 							<div class="card-body">
 							<h4 class="text-heading text-lg font-semibold mb-6">Recent Transactions</h4>
 							<ul class="timeline-widget relative">
-                               <li class="timeline-item flex relative overflow-hidden">
+                               <li class="timeline-item flex relative overflow-hidden min-h-[70px]">
                                    <div class="timeline-time text-heading text-sm min-w-[90px] py-[6px] pr-4 text-end">
                                        9:30 am
 								   </div>
@@ -121,7 +121,7 @@
 									<p class="text-heading text-sm font-normal">Payment received from John Doe of $385.90</p>
 								   </div>
 							   </li>
-                               <li class="timeline-item flex relative overflow-hidden">
+                               <li class="timeline-item flex relative overflow-hidden min-h-[70px]">
                                    <div class="timeline-time text-heading min-w-[90px] py-[6px] text-sm pr-4 text-end">
                                        10:00 am
 								   </div>
@@ -136,7 +136,7 @@
 								   </div>
 							   </li>
 
-                               <li class="timeline-item flex relative overflow-hidden">
+                               <li class="timeline-item flex relative overflow-hidden min-h-[70px]">
 								<div class="timeline-time text-heading min-w-[90px] text-sm py-[6px] pr-4 text-end">
 									12:00 am
 								</div>
@@ -150,7 +150,7 @@
 								</div>
 							</li>
 							
-							<li class="timeline-item flex relative overflow-hidden">
+							<li class="timeline-item flex relative overflow-hidden min-h-[70px]">
 								<div class="timeline-time text-heading min-w-[90px] text-sm py-[6px] pr-4 text-end">
 									9:30 am
 								</div>
@@ -165,7 +165,7 @@
 								</div>
 							</li>
 
-							<li class="timeline-item flex relative overflow-hidden">
+							<li class="timeline-item flex relative overflow-hidden min-h-[70px]">
 								<div class="timeline-time text-heading text-sm min-w-[90px] py-[6px] pr-4 text-end">
 									9:30 am
 								</div>
@@ -196,7 +196,7 @@
 							</div>
 						  </div>
 						  <div class="col-span-2">
-							<div class="card">
+							<div class="card h-full">
 								<div class="card-body">
 									<h4 class="text-heading text-lg font-semibold mb-6">Recent Transaction</h4>
 									<div class="relative overflow-x-auto">

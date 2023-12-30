@@ -1,4 +1,4 @@
-[data-bs-theme="light"] .DEFAULT_THEME{
+ .DEFAULT_THEME{
     --color-primary: #5D87FF;
     --color-secondary: #49BEFF;
     --color-lightprimary:#ECF2FF;
@@ -33,12 +33,3 @@
 
 }
 
-/* [data-bs-theme="light"][data-color-theme="Blue_Theme"]:root{
-    --color-primary: #5D87FF;
-    --color-secondary: #49BEFF;
-    --color-lightprimary:#ECF2FF;
-    --color-lightsecondary:#E8F7FF;
-    --color-darkprimary:#26334A;
-    --color-darksecondary:#24384A;
-    
-} */

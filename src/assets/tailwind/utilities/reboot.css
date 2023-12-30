@@ -40,36 +40,4 @@ video {
 .light-logo {
     display: none;
 }
-body.DARK_DEFUALT_THEME .light-logo {
-    display: block;
-}
-body.DARK_DEFUALT_THEME .dark-logo {
-    display: none;
-}
-body.DARK_DEFUALT_THEME.cardborder .cardshadow {
-    color: white !important;
-}
-body.DARK_DEFUALT_THEME.cardshadow .cardborder {
-    color: white !important;
-}
-body.DARK_DEFUALT_THEME.fullwidth .boxed-width {
-    color: white !important;
-}
-body.DARK_DEFUALT_THEME.boxed .full-width {
-    color: white !important;
-}
-body.DARK_DEFUALT_THEME.fullsidebar .customizer-sidebartoggler {
-    color: white !important;
-}
-body.DARK_DEFUALT_THEME.minisidebar .fullsidebar {
-    color: white !important;
-}
-body.DARK_DEFUALT_THEME .card-option:not(.activecard) {
-    color: white !important;
-}
-body.DARK_DEFUALT_THEME .layout-option:not(.activelayout) {
-    color: white !important;
-}
-body.DARK_DEFUALT_THEME .side-layout:not(.sidefull) {
-    color: white !important;
-}
+

@@ -38,73 +38,10 @@ module.exports = {
 			"heading":"var(--color-heading)",
 			"muted":"var(--color-muted)",
 			"gray100": "var(--color-gray100)",
-
-			//Dark Colors Variables
 			"dark": "var(--color-dark)",
-			"darklink":"var(--color-darklink)",
-			"darkborder": "var(--color-darkborder)",
-			"darkgray":"var(--color-darkgray)",
-			"darkinfo": "var(--color-darkinfo)",
-			"darkprimary":"var(--color-darkprimary)",
-			"darksecondary":"var(--color-darksecondary)",
+
 
 		},
-
-		// textColor: {
-		//   "primary" : "var(--color-primary)",
-		//   "secondary" : "var(--color-secondary)",
-		//   "info": "var(--color-info)",
-		//   "success": "var(--color-success)",
-		//   "warning": "var(--color-warning)",
-		//   "error": "var(--color-error)",
-		//   "lightprimary": "var(--color-lightprimary)",
-		//   "lightsecondary": "var(--color-lightsecondary)",
-		//   "lightsuccess": "var(--color-lightsuccess)",
-		//   "lighterror": "var(--color-lighterror)",
-		//   "lightinfo": "var(--color-lightinfo)",
-		//   "lightwarning": "var(--color-lightwarning)",
-		//   "textPrimary": "var(--color-textPrimary)",
-		//   "textSecondary": "var(--color-textSecondary)",
-		//   "borderColor": "var(--color-borderColor)",
-		//   "inputBorder": "var(--color-inputBorder)",
-		//   "surface": "var(--color-surface)",
-		//   "grey100": "var(--color-grey100)",
-		//   "grey200": "var(--color-grey200)",
-		//   "themewhite":"var(--color-themewhite)",
-		//   "muted":"var(--color-muted)",
-		// 	...colors
-		// },
-		// backgroundColor: {
-		//   "primary" : "var(--color-primary)",
-		//   "secondary" : "var(--color-secondary)",
-		//   "info": "var(--color-info)",
-		//   "success": "var(--color-success)",
-		//   "warning": "var(--color-warning)",
-		//   "error": "var(--color-error)",
-		//   "lightprimary": "var(--color-lightprimary)",
-		//   "lightsecondary": "var(--color-lightsecondary)",
-		//   "lightsuccess": "var(--color-lightsuccess)",
-		//   "lighterror": "var(--color-lighterror)",
-		//   "lightinfo": "var(--color-lightinfo)",
-		//   "lightwarning": "var(--color-lightwarning)",
-		//   "textPrimary": "var(--color-textPrimary)",
-		//   "textSecondary": "var(--color-textSecondary)",
-		//   "borderColor": "var(--color-borderColor)",
-		//   "inputBorder": "var(--color-inputBorder)",
-		//   "surface": "var(--color-surface)",
-		//   "dark-surface": "var(--color-dark-surface)",
-		//   "grey100": "var(--color-grey100)",
-		//   "grey200": "var(--color-grey200)",
-		//   "themewhite":"var(--color-themewhite)",
-		//   "muted":"var(--color-muted)",
-		// 	...colors
-		// },
-
-		// borderColor: {
-		// 	"borderColor": "var(--color-borderColor)",
-		// 	"borderPrimary": "var(--color-primary)",
-		// 	...colors
-		// },
 
 		fontFamily: {
 			sans: ['Plus Jakarta Sans', 'sans-serif'],

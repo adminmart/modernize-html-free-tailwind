@@ -31,24 +31,27 @@
 .page-wrapper{
     margin-left: 270px;
 }
+.left-sidebar {
+    position: fixed;
+}
 
 @media (max-width: 1280px) {
     .page-wrapper{
         margin-left: 0px;
     }
-    [data-layout=vertical] [data-sidebartype=mini-sidebar] .left-sidebar {
-        left: -270px;
+     .left-sidebar {
         position: fixed;
    }
-   [data-layout=vertical] [data-sidebartype=full] .left-sidebar {
-        left: 0;
-        position: fixed;
+
+   /* #main-wrapper.show-sidebar > .left-sidebar{
+    left: 0px;
    }
+
     .show-sidebar .dark-transparent {
         position: fixed;
         z-index: 21;
         background: rgba(0, 0, 0, 0.5);
         top: 0;
         height: 100%;
-   }
+   } */
 }
