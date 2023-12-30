@@ -1302,6 +1302,22 @@ select {
   background-color: var(--color-white);
 }
 
+.bg-lightsecondary {
+  background-color: var(--color-lightsecondary);
+}
+
+.bg-lightwarning {
+  background-color: var(--color-lightwarning);
+}
+
+.bg-lightinfo {
+  background-color: var(--color-lightinfo);
+}
+
+.bg-lightgray {
+  background-color: var( --color-lightgray);
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1553,121 +1569,151 @@ select {
   transition-duration: 300ms;
 }
 
+
 .hover\:border-dark:hover {
   border-color: var(--color-dark);
 }
+
 
 .hover\:border-error:hover {
   border-color: var(--color-error);
 }
 
+
 .hover\:border-info:hover {
   border-color: var(--color-info);
 }
+
 
 .hover\:border-primary:hover {
   border-color: var(--color-primary);
 }
 
+
 .hover\:border-secondary:hover {
   border-color: var(--color-secondary);
 }
+
 
 .hover\:border-success:hover {
   border-color: var(--color-success);
 }
 
+
 .hover\:border-transparent:hover {
   border-color: var( --color-transparent);
 }
+
 
 .hover\:border-warning:hover {
   border-color: var(--color-warning);
 }
 
+
 .hover\:bg-dark:hover {
   background-color: var(--color-dark);
 }
+
 
 .hover\:bg-darkhover:hover {
   background-color: var(--color-btndark-hover-bg);
 }
 
+
 .hover\:bg-error:hover {
   background-color: var(--color-error);
 }
+
 
 .hover\:bg-errorhover:hover {
   background-color: var(--color-btnerror-hover-bg);
 }
 
+
 .hover\:bg-info:hover {
   background-color: var(--color-info);
 }
+
 
 .hover\:bg-infohover:hover {
   background-color: var(--color-btninfo-hover-bg);
 }
 
+
 .hover\:bg-lighthover:hover {
   background-color: var(--color-btnlight-hover-bg);
 }
+
 
 .hover\:bg-lightprimary:hover {
   background-color: var(--color-lightprimary);
 }
 
+
 .hover\:bg-primary:hover {
   background-color: var(--color-primary);
 }
+
 
 .hover\:bg-primaryhover:hover {
   background-color: var(--color-btnprimary-hover-bg);
 }
 
+
 .hover\:bg-secondary:hover {
   background-color: var(--color-secondary);
 }
+
 
 .hover\:bg-secondaryhover:hover {
   background-color: var(--color-btnsecondary-hover-bg);
 }
 
+
 .hover\:bg-success:hover {
   background-color: var(--color-success);
 }
+
 
 .hover\:bg-successhover:hover {
   background-color: var(--color-btnsuccess-hover-bg);
 }
 
+
 .hover\:bg-transparent:hover {
   background-color: var( --color-transparent);
 }
+
 
 .hover\:bg-warning:hover {
   background-color: var(--color-warning);
 }
 
+
 .hover\:bg-warninghover:hover {
   background-color: var(--color-btnwarning-hover-bg);
 }
+
 
 .hover\:text-heading:hover {
   color: var(--color-heading);
 }
 
+
 .hover\:text-primary:hover {
   color: var(--color-primary);
 }
+
 
 .hover\:text-primaryhover:hover {
   color: var(--color-btnprimary-hover-bg);
 }
 
+
 .hover\:text-white:hover {
   color: var(--color-white);
 }
+
 
 .focus\:ring-0:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
@@ -1675,31 +1721,38 @@ select {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+
 .disabled\:pointer-events-none:disabled {
   pointer-events: none;
 }
+
 
 .disabled\:opacity-50:disabled {
   opacity: 0.5;
 }
 
+
 .hs-dropdown.open > .hs-dropdown-open\:opacity-100 {
   opacity: 1;
 }
 
+
 .hs-dropdown.open > .hs-dropdown-menu > .hs-dropdown-open\:opacity-100 {
   opacity: 1;
 }
+
 
 .open.hs-overlay-open\:translate-x-0 {
   --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+
 .open .hs-overlay-open\:translate-x-0 {
   --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
 
 @media (min-width: 640px) {
 
@@ -1715,6 +1768,7 @@ select {
     width: auto;
   }
 }
+
 
 @media (min-width: 768px) {
 
@@ -1736,6 +1790,7 @@ select {
     padding-bottom: 0px;
   }
 }
+
 
 @media (min-width: 1024px) {
 
@@ -1761,6 +1816,7 @@ select {
     padding-right: 2rem;
   }
 }
+
 
 @media (min-width: 1280px) {
 
@@ -1789,6 +1845,7 @@ select {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
 
 :is(:where(.dark) .dark\:bg-dark) {
   background-color: var(--color-dark);

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html data-hs-theme-switch  lang="en" dir="ltr" >
+
+<head>
+	@@include("../partials/head.html")
+	<title>Modernize TailwindCSS HTML Admin Template</title>
+</head>
+
+<body class="DEFAULT_THEME bg-white">
+	<main>
+		<!--start the project-->
+		<div id="main-wrapper" class="overflow-x-hidden flex">
+			<aside
+				class="with-vertical w-[270px] left-sidebar bg-white h-screen flex-shrink-0 border-r-[1px] border-border z-40  transition-all duration-300 fixed" >
+				@@include("../partials/sidebar.html")
+			</aside>
+			<div class="flex flex-col flex-1 w-full page-wrapper">
+
+				<!--  Header Start -->
+				<header class="flex flex-wrap md:justify-start md:flex-nowrap w-full text-sm   py-4">
+					<div class="with-vertical w-full">@@include("../partials/header.html")</div>
+				</header>
+				<!--  Header End -->
+
+				<!-- Main Content -->
+				<main class="h-full overflow-y-auto  max-w-full  pt-4">
+					<div class="container full-container py-5 flex flex-col gap-6">
+                        <div class="card">
+							<div class="card-body flex flex-col gap-6">
+								<h6 class="text-lg text-heading font-semibold">Alerts</h6>
+								<div class="card">
+									<div class="card-body flex flex-col gap-3">
+                                        <div class="bg-lightprimary border text-sm text-primary rounded-md p-4 " role="alert">
+                                            <span class="font-bold">Primary</span> alert! You should check in on some of those fields below.
+                                          </div>
+                                          <div class="bg-lightsecondary border text-sm text-secondary rounded-md p-4" role="alert">
+                                            <span class="font-bold">Secondary</span> alert! You should check in on some of those fields below.
+                                          </div>
+                                          <div class="bg-lightsuccess border text-sm text-success rounded-md p-4" role="alert">
+                                            <span class="font-bold">Success</span> alert! You should check in on some of those fields below.
+                                          </div>
+                                          <div class="bg-lightwarning border text-sm text-warning rounded-md p-4" role="alert">
+                                            <span class="font-bold">Warning</span> alert! You should check in on some of those fields below.
+                                          </div>
+                                          <div class="bg-lighterror border text-sm text-error rounded-md p-4" role="alert">
+                                            <span class="font-bold">Danger</span> alert! You should check in on some of those fields below.
+                                          </div>
+                                          <div class="bg-lightinfo border text-sm text-info rounded-md p-4" role="alert">
+                                            <span class="font-bold">Info</span> alert! You should check in on some of those fields below.
+                                          </div>
+                                          <div class="bg-lightgray border border-border text-sm text-heading rounded-md p-4" role="alert">
+                                            <span class="font-bold">Light</span> alert! You should check in on some of those fields below.
+                                          </div>                                       								
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</main>
+				<!-- Main Content End -->
+				<div class="dark-transparent sidebartoggler top-0 left-0 w-full"></div>
+			</div>
+		</div>
+		<!--end of project-->
+	</main>
+
+
+	@@include("../partials/scripts.html")
+</body>
+
+</html>
