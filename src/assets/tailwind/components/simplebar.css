@@ -196,11 +196,6 @@
     width: auto;
   }
   
-  /* Rtl support */
-  [data-simplebar-direction='rtl'] .simplebar-track.simplebar-vertical {
-    right: auto;
-    left: 0;
-  }
   
   .simplebar-dummy-scrollbar-size {
     direction: rtl;

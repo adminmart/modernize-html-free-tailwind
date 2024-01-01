@@ -1,17 +1,6 @@
-.header-navbar li a{
-    padding: 5px 10px;
-    border-radius:7px;
-}
 
-/* .header-navbar li a.header-link:hover{
-    color:var(--color-primary);
-    background-color: var(--color-lightprimary);
-} */
-/* .header-navbar li a.header-link{
-    color:var(--color-textPrimary) ;
-} */
 .icon-nav li a:hover.icon-hover{
-    color:var(--color-primary) ;
+    color:#5D87FF ;
 }
 .icon-hover:hover::before{
     content: "";
@@ -23,5 +12,5 @@
     width: 40px;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
-    background-color: var(--color-lightprimary);
+    background-color: #ECF2FF;
 }

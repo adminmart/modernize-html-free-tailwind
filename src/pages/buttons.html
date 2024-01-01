@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-hs-theme-switch  lang="en" dir="ltr" >
+<html   lang="en" >
 
 <head>
 	@@include("../partials/head.html")
@@ -9,16 +9,16 @@
 <body class="DEFAULT_THEME bg-white">
 	<main>
 		<!--start the project-->
-		<div id="main-wrapper" class="overflow-x-hidden flex">
-			<aside
-				class="with-vertical w-[270px] left-sidebar bg-white h-screen flex-shrink-0 border-r-[1px] border-border z-40  transition-all duration-300 fixed" >
+		<div id="main-wrapper" class=" flex">
+			<aside id="application-sidebar-brand"
+				class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full  transform hidden xl:block xl:translate-x-0 xl:end-auto xl:bottom-0 fixed top-0 with-vertical h-screen z-[999] flex-shrink-0 border-r-[1px] w-[270px] border-gray-400  bg-white  left-sidebar   transition-all duration-300" >
 				@@include("../partials/sidebar.html")
 			</aside>
-			<div class="flex flex-col flex-1 w-full page-wrapper">
+			<div class="w-full page-wrapper overflow-hidden">
 
 				<!--  Header Start -->
-				<header class="flex flex-wrap md:justify-start md:flex-nowrap w-full text-sm   py-4">
-					<div class="with-vertical w-full">@@include("../partials/header.html")</div>
+				<header class="container full-container w-full text-sm   py-4">
+					<div class=" w-full">@@include("../partials/header.html")</div>
 				</header>
 				<!--  Header End -->
 
@@ -27,34 +27,34 @@
 					<div class="container full-container py-5 flex flex-col gap-6">
                         <div class="card">
 							<div class="card-body flex flex-col gap-6">
-								<h6 class="text-lg text-heading font-semibold">Buttons</h6>
+								<h6 class="text-lg text-gray-600 font-semibold">Buttons</h6>
 								<div class="card">
 									<div class="card-body flex gap-3">
-										<button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-primary text-white hover:bg-darkprimary disabled:opacity-50 disabled:pointer-events-none">
+										<button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-blue-600 text-white hover:bg-blue-700 ">
 										Primary
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-secondary text-white hover:bg-darksecondary disabled:opacity-50 disabled:pointer-events-none">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-cyan-500 text-white hover:bg-cyan-600">
 											Secondary
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-success text-white hover:bg-darksuccess disabled:opacity-50 disabled:pointer-events-none">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-teal-500 text-white hover:bg-teal-600">
 											Success
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-warning text-white hover:bg-darkwarning disabled:opacity-50 disabled:pointer-events-none">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-yellow-500 text-white hover:bg-yellow-600">
 											Warning
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-error text-white hover:bg-darkerror disabled:opacity-50 disabled:pointer-events-none">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-red-500 text-white hover:bg-red-600">
 											Danger
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-info text-white hover:bg-darkinfo disabled:opacity-50 disabled:pointer-events-none">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-blue-300 text-white hover:bg-blue-400">
 											Info
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-dark text-white hover:bg-darkemphasis disabled:opacity-50 disabled:pointer-events-none">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-gray-600 text-white hover:bg-gray-700">
 											Dark
 										  </button>										
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-transparent text-heading hover:bg-lightemphasis disabled:opacity-50 disabled:pointer-events-none">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-transparent text-gray-600 hover:bg-lightemphasis">
 											Light
 										  </button>	
-										  <button type="button" class="inline-flex items-center gap-x-2 text-sm font-semibold rounded-md text-primary hover:text-darkprimary disabled:opacity-50 disabled:pointer-events-none ">
+										  <button type="button" class="inline-flex items-center gap-x-2 text-sm font-semibold rounded-md text-blue-600 hover:text-blue-700 ">
 											Link
 										  </button>									
 									</div>
@@ -62,31 +62,31 @@
 								<h6 class="text-lg text-heading font-semibold">Outline buttons</h6>
 								<div class="card">
 									<div class="card-body flex gap-3">
-										<button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-primary text-primary hover:border-primary hover:text-white disabled:opacity-50 disabled:pointer-events-none hover:bg-primary">
+										<button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-blue-600 text-blue-600 hover:border-blue-600 hover:text-white hover:bg-blue-600">
 											Primary
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-secondary text-secondary hover:border-secondary hover:text-white disabled:opacity-50 disabled:pointer-events-none hover:bg-secondary">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-cyan-500 text-cyan-500 hover:border-cyan-500 hover:text-white hover:bg-cyan-500">
 											Secondary
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-success text-success hover:border-success hover:text-white disabled:opacity-50 disabled:pointer-events-none hover:bg-success">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-teal-500 text-teal-500 hover:border-teal-500 hover:text-white hover:bg-teal-500 ">
 											Success
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-warning text-warning hover:border-warning hover:text-white disabled:opacity-50 disabled:pointer-events-none hover:bg-warning">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border text-yellow-500 hover:border-yellow-500 hover:text-white hover:bg-yellow-500 border-yellow-500">
 											Warning
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-error text-error hover:border-error hover:text-white disabled:opacity-50 disabled:pointer-events-none hover:bg-error">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-red-500 text-red-500 hover:border-red-500 hover:text-white hover:bg-red-500">
 											Danger
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-info text-info hover:border-info hover:text-white disabled:opacity-50 disabled:pointer-events-none hover:bg-info">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-blue-300 text-blue-300  hover:border-blue-300 hover:text-white hover:bg-blue-300">
 											Info
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent text-transparent hover:border-transparent hover:text-heading disabled:opacity-50 disabled:pointer-events-none hover:bg-transparent">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent text-transparent hover:border-transparent hover:text-gray-600 hover:bg-transparent">
 											Light
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-dark text-dark hover:border-dark hover:text-white disabled:opacity-50 disabled:pointer-events-none hover:bg-dark">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-gray-700 text-gray-border-gray-700 hover:border-gray-700 hover:text-white hover:bg-gray-700">
 											Dark
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent text-muted hover:border-transparent disabled:opacity-50 disabled:pointer-events-none ">
+										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent text-gray-500 hover:border-transparent ">
 											Link
 										  </button>
 									</div>
@@ -98,7 +98,7 @@
 
 				</main>
 				<!-- Main Content End -->
-				<div class="dark-transparent sidebartoggler top-0 left-0 w-full"></div>
+			
 			</div>
 		</div>
 		<!--end of project-->

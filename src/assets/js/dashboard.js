@@ -87,15 +87,26 @@ $(function () {
   
       responsive: [
         {
+          breakpoint: 1400,
+          options: {
+            plotOptions: {
+              bar: {
+                borderRadius: [5],
+              }
+            },
+          }
+        },
+        {
           breakpoint: 600,
           options: {
             plotOptions: {
               bar: {
-                borderRadius: 3,
+                borderRadius: [3],
               }
             },
           }
-        }
+        },
+
       ]
   
   

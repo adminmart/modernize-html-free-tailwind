@@ -8,37 +8,44 @@ module.exports = {
 	theme: {
 
 		colors: {
-
-			//Light Colors Variables
-			"primary": "var(--color-primary)",
-			"secondary": "var(--color-secondary)",
-			"info": "var(--color-info)",
-			"success": "var(--color-success)",
-			"warning": "var(--color-warning)",
-			"error": "var(--color-error)",
-			"lightprimary": "var(--color-lightprimary)",
-			"lightsecondary": "var(--color-lightsecondary)",
-			"lightsuccess": "var(--color-lightsuccess)",
-			"lighterror": "var(--color-lighterror)",
-			"lightinfo": "var(--color-lightinfo)",
-			"lightwarning": "var(--color-lightwarning)",
-			"darkprimary": "var(--color-darkprimary)",
-			"darksecondary": "var(--color-darksecondary)",
-			"darksuccess": "var(--color-darksuccess)",
-			"darkwarning": "var(--color-darkwarning)",
-			"darkerror": "var(--color-darkerror)",
-			"darkinfo": "var(--color-darkinfo)",
-			"darkemphasis": "var(--color-darkemphasis)",
-			"lightemphasis": "var(--color-lightemphasis)",
-			"border": "var(--color-border)",
-			"white": "var(--color-white)",
-			"lightgray":"var( --color-lightgray)",
-			"body":"var( --color-body)",
-			"transparent":"var( --color-transparent)",
-			"heading":"var(--color-heading)",
-			"muted":"var(--color-muted)",
-			"gray100": "var(--color-gray100)",
-			"dark": "var(--color-dark)",
+			blue:{
+				200:'#EBF3FE',
+				300:'#539BFF',
+				400:'#4784d9',
+				500:'#ECF2FF',
+				600:'#5D87FF',
+				700:'#4f73d9'
+			},
+			cyan:{
+				400:"#E8F7FF",
+				500:'#49BEFF',
+				600:'#3ea2d9',
+			},
+			teal:{
+				400:"#E6FFFA",
+				500:'#13DEB9',
+				600:'#10bd9d',				
+			},
+			yellow:{
+				400:"#FEF5E5",
+				500:'#FFAE1F',
+				600:'#d9941a',				
+			},
+			red:{
+				400:"#FDEDE8",
+				500:'#FA896B',
+				600:'#d5745b',
+			},
+			gray:{
+				100:'#ebf1f6',
+				400:'#e5eaef',
+				500:'#5A6A85',
+				600:'#2a3547',
+				700:'#202936',
+				
+			},
+			"transparent":'transparent',
+			"white":"#fff"
 
 
 		},
@@ -50,6 +57,7 @@ module.exports = {
 			'none': '0px',
 			'md': '7px',
 			'full': '50%',
+			'2xl' : '15px',
 			'3xl': '9999px'
 		},
 		extend: {
@@ -66,9 +74,8 @@ module.exports = {
 	variants: {},
 	plugins: [
 		require('@tailwindcss/forms')({
-			strategy: 'base', // only generate global styles
+			strategy: 'base', 
 		}),
-		require('@tailwindcss/typography'),
 		require('preline/plugin'),
 	],
 };

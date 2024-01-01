@@ -21,15 +21,12 @@
         @apply  shadow-md bg-white relative rounded-md;  
     }
     .form-control{
-        @apply rounded-md border border-border   w-full text-heading text-sm py-3 px-3;
+        @apply rounded-md border border-gray-400   w-full text-gray-600 text-sm py-3 px-3;
     }
     .btn{
-        @apply rounded-md bg-primary text-white text-sm py-[7px] px-4 text-center;
-    }
-    .btn-outline{
-        @apply rounded-md  border text-sm py-2 px-3 text-center;
+        @apply rounded-md bg-blue-600 text-white text-sm py-2 px-4 text-center;
     }
     .btn-outline-primary{
-        @apply rounded-md border border-primary text-primary text-sm py-[7px] px-4 text-center;
+        @apply rounded-md border border-blue-600 text-blue-600 text-sm py-2 px-4 text-center;
     }
 }
