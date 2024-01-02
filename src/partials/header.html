@@ -3,10 +3,8 @@
 <!-- ========== HEADER ========== -->
 
     <nav class=" w-full bg-gray-800  flex items-center justify-between" aria-label="Global">
-      <div>
-        <div>
-            <ul class="icon-nav flex items-center gap-2">
-                <li class="relative px-3 xl:hidden">
+            <ul class="icon-nav flex items-center gap-4">
+                <li class="relative xl:hidden">
                     <a class="text-xl  icon-hover cursor-pointer text-heading"
                         id="headerCollapse" data-hs-overlay="#application-sidebar-brand"
                         aria-controls="application-sidebar-brand" aria-label="Toggle navigation" href="javascript:void(0)">
@@ -17,21 +15,11 @@
             <li class="relative">
                 @@include("./header-components/dd-notification.html")
             </li>
-            <li>
-
-            </li>
             </ul>
-
-        </div>
-      </div>
-      <div>
-        <div class="flex  items-center justify-end gap-2">
-          <a href="#" aria-current="page"><button class="btn font-medium hover:bg-blue-700 py-2">Download Free</button></a>
-          <a class="relative" href="#">
+        <div class="flex items-center gap-4">
+          <a href="#" class="btn font-medium hover:bg-blue-700 py-2" aria-current="page">Download Free</a>
             @@include("./header-components/dd-profile.html")
-          </a>
         </div>
-      </div>
     </nav>
 
   <!-- ========== END HEADER ========== -->

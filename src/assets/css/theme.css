@@ -846,6 +846,10 @@ select {
   grid-column: span 2 / span 2;
 }
 
+.m-6 {
+  margin: 1.5rem;
+}
+
 .my-\[10px\] {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -909,6 +913,10 @@ select {
 
 .mt-\[7px\] {
   margin-top: 7px;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .block {
@@ -1013,6 +1021,14 @@ select {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[360px\] {
+  width: 360px;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .min-w-\[90px\] {
@@ -1402,6 +1418,21 @@ select {
   padding-bottom: 6px;
 }
 
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1567,6 +1598,18 @@ select {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.\[--placement\:bottom-right\] {
+  --placement: bottom-right;
+}
+
+.\[--placement\:bottom-left\] {
+  --placement: bottom-left;
+}
+
+.\[--trigger\:hover\] {
+  --trigger: hover;
 }
 
 
@@ -1736,6 +1779,12 @@ select {
 }
 
 
+.focus\:border-blue-600:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(93 135 255 / var(--tw-border-opacity));
+}
+
+
 .focus\:ring-0:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -1746,6 +1795,12 @@ select {
 .focus\:ring-blue-500:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(236 242 255 / var(--tw-ring-opacity));
+}
+
+
+.focus\:ring-blue-600:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(93 135 255 / var(--tw-ring-opacity));
 }
 
 
@@ -1794,6 +1849,10 @@ select {
   .sm\:w-auto {
     width: auto;
   }
+
+  .sm\:\[--trigger\:hover\] {
+    --trigger: hover;
+  }
 }
 
 
@@ -1814,6 +1873,11 @@ select {
 
   .lg\:gap-y-0 {
     row-gap: 0px;
+  }
+
+  .lg\:px-9 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
   }
 }
 
@@ -1843,6 +1907,11 @@ select {
 
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:px-9 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
   }
 }
 
