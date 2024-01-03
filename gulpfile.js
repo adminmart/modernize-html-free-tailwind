@@ -1,61 +1,60 @@
 // Load plugins
-const { src, dest, watch, parallel, series } = require('gulp');
-const browsersync = require('browser-sync').create();
-const fileinclude = require('gulp-file-include');
-const useref = require('gulp-useref');
-const cached = require('gulp-cached');
-const gulpIf = require('gulp-if');
-const del = require('del');
-const npmDist = require('gulp-npm-dist');
-const postcss = require('gulp-postcss');
-const cssnano = require('cssnano');
-const autoprefixer = require('autoprefixer');
-const replace = require('gulp-replace');
-const gulpTerser = require('gulp-terser');
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
-const tailwindcss = require('tailwindcss');
+const { src, dest, watch, parallel, series } = require("gulp");
+const sass = require("gulp-sass")(require("sass"));
+const gulpautoprefixer = require("gulp-autoprefixer");
+const browsersync = require("browser-sync").create();
+const fileinclude = require("gulp-file-include");
+const useref = require("gulp-useref");
+const gulpIf = require("gulp-if");
+const npmDist = require("gulp-npm-dist");
+const postcss = require("gulp-postcss");
 const TAILWIND_CONFIG = './tailwind.config.js';
-const imagemin = require('gulp-imagemin');
-const jpegrecompress = require('imagemin-jpeg-recompress');
-const pngquant = require('imagemin-pngquant');
+const cssnano = require("cssnano");
+const replace = require("gulp-replace");
+const del = require("del");
+const autoprefixer = require("autoprefixer");
+const terser = require("gulp-terser");
+const minifyCSS = require("gulp-clean-css");
+const concat = require('gulp-concat');
 
-
-// Paths to project folders
-
+//**************************//
+// Set Your Default Paths
+//**************************//
 const paths = {
-	base: {
-		base: './',
-		node: './node_modules',
-	},
-	src: {
-		basesrc: './src',
-		basesrcfiles: './src/**/*',
-		css: './src/assets/css',
-		tailwind: './src/assets/tailwind/**/*.css',
-		js: './src/assets/js/**/*.js',
-		vendorJs: './src/assets/js/vendors/*.js',
-		html: './src/**/*.html',
-		images: './src/assets/images/**/*',
-		fonts: './src/assets/fonts/**/*',
-		assets: './src/assets/**/*',
-		partials: '.src/partials/**/*',
-	},
-	temp: {
-		basetemp: './.temp',
-	},
-	dist: {
-		basedist: './dist',
-		js: './dist/assets/js',
-		vendorJs: './dist/assets/js/vendors',
-		images: './dist/assets/images',
-		css: './dist/assets/css',
-		fonts: './dist/assets/fonts',
-		libs: './dist/assets/libs',
-	},
+  base: {
+    base: "./",
+    node: "./node_modules",
+  },
+  src: {
+    basesrc: "./src",
+    basesrcfiles: "./src/**/*",
+    css: "./src/assets/css",
+    tailwind: './src/assets/tailwind/**/*.css',
+    js: "./src/assets/js/**/*.js",
+    html: "./src/**/*.html",
+    fonts: "./src/assets/fonts/**/*",
+    assets: "./src/assets/**/*",
+    shared: ".src/partials/**/*",
+    images: "./src/assets/images/**/*",
+  },
+  temp: {
+    basetemp: "./.temp",
+  },
+  dist: {
+    basedist: "./dist",
+    js: "./dist/assets/js",
+    images: "./dist/assets/images",
+    fonts: "./dist/assets/fonts",
+    css: "./dist/assets/css",
+    libs: "./dist/assets/libs",
+  },
 };
 
-// Tailwind css  to CSS
+
+//**************************//
+// Compile tailwind to CSS
+//**************************//
+
 function css(callback) {
 	return src(paths.src.tailwind)
 		.pipe(postcss([tailwindcss(TAILWIND_CONFIG), require('autoprefixer')]))
@@ -65,128 +64,120 @@ function css(callback) {
 	callback();
 }
 
-// vendor js
-function vendorJs(callback) {
-	return src(paths.src.vendorJs).pipe(uglify()).pipe(dest(paths.dist.vendorJs));
-	callback();
-}
-
-// Image
-function images(callback) {
-	return src(paths.src.images)
-		.pipe(
-			imagemin([
-				imagemin.gifsicle({ interlaced: true }),
-				jpegrecompress({
-					progressive: true,
-					max: 90,
-					min: 80,
-				}),
-				pngquant(),
-				imagemin.svgo({ plugins: [{ removeViewBox: false }] }),
-			])
-		)
-		.pipe(dest(paths.dist.images));
-	callback();
-}
-
-// Font task
-function fonts(callback) {
-	return src(paths.src.fonts).pipe(dest(paths.dist.fonts));
-	callback();
-}
-
-// HTML
-function html(callback) {
-	return src([paths.src.html, '!./src/partials/**/*'])
-		.pipe(
-			fileinclude({
-				prefix: '@@',
-				basepath: '@file',
-			})
-		)
-		.pipe(replace(/src="(.{0,10})node_modules/g, 'src="$1assets/libs'))
-		.pipe(replace(/href="(.{0,10})node_modules/g, 'href="$1assets/libs'))
-		.pipe(useref())
-		.pipe(cached())
-		.pipe(gulpIf('*.css', postcss([autoprefixer(), cssnano()]))) // PostCSS plugins with cssnano
-		.pipe(gulpIf('*.js', gulpTerser()))
-		.pipe(dest(paths.dist.basedist))
-		.pipe(browsersync.stream());
-	callback();
+//**************************//
+// File Includes
+//**************************//
+function html() {
+  return src([paths.src.html, "!./src/partials/**/*"])
+    .pipe(
+      fileinclude({
+        prefix: "@@",
+        basepath: "@file",
+      })
+    )
+    .pipe(replace(/src="(.{0,10})node_modules/g, 'src="$1assets/libs'))
+    .pipe(replace(/href="(.{0,10})node_modules/g, 'href="$1assets/libs'))
+    .pipe(useref())
+    .pipe(gulpIf("*.css", postcss([autoprefixer(), cssnano()])))
+    .pipe(gulpIf("*.js", terser()))
+    .pipe(dest(paths.dist.basedist))
+    .pipe(browsersync.stream());
 }
 
 // File include task for temp
-function fileincludeTask(callback) {
-	return src([paths.src.html, '!./src/partials/**/*'])
-		.pipe(
-			fileinclude({
-				prefix: '@@',
-				basepath: '@file',
-			})
-		)
-		.pipe(cached())
-		.pipe(dest(paths.temp.basetemp));
-	callback();
+function fileincludeTask() {
+  return src([paths.src.html, "!./src/partials/**/*"])
+    .pipe(
+      fileinclude({
+        prefix: "@@",
+        basepath: "@file",
+      })
+    )
+    .pipe(dest(paths.temp.basetemp));
 }
 
 // Copy libs file from nodemodules to dist
-function copyLibs(callback) {
-	return src(npmDist(), { base: paths.base.node }).pipe(dest(paths.dist.libs));
-	callback();
+function copyLibs() {
+  return src(npmDist(), { base: paths.base.node }).pipe(dest(paths.dist.libs));
+}
+
+// Image
+function images() {
+  return src(paths.src.images).pipe(dest(paths.dist.images));
+}
+// Image
+function fonts() {
+  return src(paths.src.fonts).pipe(dest(paths.dist.fonts));
+}
+// Image
+function js() {
+  return src(paths.src.js).pipe(dest(paths.dist.js));
+}
+function css() {
+  return (
+    src("./src/assets/css/**/*.css")
+      //.pipe(gulpif("./src/assets/css/**/*.css", minifyCss()))
+      .pipe(dest(paths.dist.css))
+  );
 }
 
 // Clean .temp folder
 function cleanTemp(callback) {
-	del.sync(paths.temp.basetemp);
-	callback();
+  del.sync(paths.temp.basetemp);
+  callback();
 }
 
 // Clean Dist folder
 function cleanDist(callback) {
-	del.sync(paths.dist.basedist);
-	callback();
+  del.sync(paths.dist.basedist);
+  callback();
 }
 
 // Browser Sync Serve
 function browsersyncServe(callback) {
-	browsersync.init({
-		port: 3200,
-		server: {
-			baseDir: [paths.temp.basetemp, paths.src.basesrc, paths.base.base],
-		},
-	});
-	callback();
+  browsersync.init({
+    server: {
+      baseDir: [paths.temp.basetemp, paths.src.basesrc, paths.base.base],
+    },
+  });
+  callback();
 }
 
 // SyncReload
 function syncReload(callback) {
-	browsersync.reload();
-	callback();
+  browsersync.reload();
+  callback();
 }
-
 
 // Watch Task
 function watchTask() {
-	watch(paths.src.html, series(fileincludeTask, syncReload));
-	watch([paths.src.images, paths.src.fonts, paths.src.vendorJs], series(images, fonts, vendorJs));
-	watch([paths.src.tailwind, paths.src.html, TAILWIND_CONFIG], series(css, syncReload));
+  watch(paths.src.html, series(fileincludeTask, syncReload));
+  watch([paths.src.images], series(images));
+  watch([paths.src.tailwind, paths.src.html, TAILWIND_CONFIG], series(css, syncReload));
 }
 
 // Default Task Preview
 exports.default = series(fileincludeTask, browsersyncServe, watchTask);
 
 // Build Task for Dist
-exports.build = series(parallel(cleanDist), html, images, fonts, vendorJs, copyLibs, cleanTemp);
+exports.build = series(
+  parallel(cleanDist),
+  html,
+  images,
+  css,
+  js,
+  fonts,
+  copyLibs,
+  cleanTemp
+);
 
 // export tasks
-
-exports.css = css;
-exports.vendorJs = vendorJs;
-exports.images = images;
-exports.fonts = fonts;
 exports.html = html;
 exports.fileincludeTask = fileincludeTask;
 exports.copyLibs = copyLibs;
 exports.cleanTemp = cleanTemp;
 exports.cleanDist = cleanDist;
+exports.images = images;
+exports.css = css;
+exports.fonts = fonts;
+exports.js = js;
