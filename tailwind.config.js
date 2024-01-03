@@ -38,6 +38,7 @@ module.exports = {
 			},
 			gray:{
 				100:'#ebf1f6',
+				200:'#DFE5EF',
 				400:'#e5eaef',
 				500:'#5A6A85',
 				600:'#2a3547',
@@ -45,7 +46,7 @@ module.exports = {
 				
 			},
 			"transparent":'transparent',
-			"white":"#fff"
+			"white":"#fff",
 
 
 		},
@@ -63,6 +64,7 @@ module.exports = {
 		extend: {
 			boxShadow: {
 				'md': 'rgba(145,158,171,0.2) 0px 0px 2px 0px,rgba(145,158,171,0.12) 0px 12px 24px -4px',
+				'xl':'inset 0 1px 2px rgba(90,106,133,0.075)',
 			},
 		},
 		container: {
@@ -76,6 +78,7 @@ module.exports = {
 		require('@tailwindcss/forms')({
 			strategy: 'base', 
 		}),
+		require('@tailwindcss/typography'),
 		require('preline/plugin'),
 	],
 };
