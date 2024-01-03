@@ -1,0 +1,16 @@
+
+.icon-nav li a:hover.icon-hover{
+    color:#5D87FF ;
+}
+.icon-hover:hover::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    background-color: #ECF2FF;
+}

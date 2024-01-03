@@ -1,0 +1,22 @@
+.simplebar-scrollbar:before {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+.left-sidebar .scroll-sidebar {
+    height: calc(100vh - 250px);
+}
+
+#sidebarnav .sidebar-item .sidebar-link.active{
+    background-color:#5D87FF;
+    color:#fff;
+}
+
+.page-wrapper{
+    margin-left: 270px;
+}
+
+@media (max-width: 1280px) {
+    .page-wrapper{
+        margin-left: 0px;
+    }
+
+}

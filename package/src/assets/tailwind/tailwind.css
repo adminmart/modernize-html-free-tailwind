@@ -1,0 +1,30 @@
+/* tailwind css */
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+@layer components {
+    .container{
+        @apply max-w-7xl;
+    }
+    .card {
+        @apply rounded-md shadow-md bg-white relative;
+    }
+    .card-body {
+        @apply p-6;
+    }
+    .hs-dropdown-menu{
+        @apply  shadow-md bg-white relative rounded-md;  
+    }
+
+    .btn{
+        @apply rounded-md bg-blue-600 text-white text-sm py-2 px-4 text-center;
+    }
+    .btn-outline-primary{
+        @apply rounded-md border border-blue-600 text-blue-600 text-sm py-2 px-4 text-center;
+    }
+}
