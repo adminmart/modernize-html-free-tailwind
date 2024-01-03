@@ -8,14 +8,15 @@ const useref = require("gulp-useref");
 const gulpIf = require("gulp-if");
 const npmDist = require("gulp-npm-dist");
 const postcss = require("gulp-postcss");
-const TAILWIND_CONFIG = './tailwind.config.js';
+const TD_CONFIG = "./tailwind.config.js";
 const cssnano = require("cssnano");
 const replace = require("gulp-replace");
 const del = require("del");
 const autoprefixer = require("autoprefixer");
 const terser = require("gulp-terser");
 const minifyCSS = require("gulp-clean-css");
-const concat = require('gulp-concat');
+const tailwindcss = require("tailwindcss");
+const concat = require("gulp-concat");
 
 //**************************//
 // Set Your Default Paths
@@ -29,7 +30,7 @@ const paths = {
     basesrc: "./src",
     basesrcfiles: "./src/**/*",
     css: "./src/assets/css",
-    tailwind: './src/assets/tailwind/**/*.css',
+    tailwind: "./src/assets/tailwind/**/*.css",
     js: "./src/assets/js/**/*.js",
     html: "./src/**/*.html",
     fonts: "./src/assets/fonts/**/*",
@@ -50,18 +51,17 @@ const paths = {
   },
 };
 
-
 //**************************//
 // Compile tailwind to CSS
 //**************************//
 
 function css(callback) {
-	return src(paths.src.tailwind)
-		.pipe(postcss([tailwindcss(TAILWIND_CONFIG), require('autoprefixer')]))
-		.pipe(concat({ path: 'theme.css' }))
-		.pipe(dest(paths.src.css))
-		.pipe(browsersync.stream());
-	callback();
+  return src(paths.src.tailwind)
+    .pipe(postcss([tailwindcss(TD_CONFIG), require("autoprefixer")]))
+    .pipe(concat({ path: "theme.css" }))
+    .pipe(dest(paths.src.css))
+    .pipe(browsersync.stream());
+  callback();
 }
 
 //**************************//
@@ -113,13 +113,11 @@ function fonts() {
 function js() {
   return src(paths.src.js).pipe(dest(paths.dist.js));
 }
-function css() {
-  return (
-    src("./src/assets/css/**/*.css")
-      //.pipe(gulpif("./src/assets/css/**/*.css", minifyCss()))
-      .pipe(dest(paths.dist.css))
-  );
-}
+// function css() {
+//   return src("./src/assets/css/**/*.css")
+//     .pipe(gulpif("./src/assets/css/**/*.css", minifyCss()))
+//     .pipe(dest(paths.dist.css));
+// }
 
 // Clean .temp folder
 function cleanTemp(callback) {
@@ -152,8 +150,11 @@ function syncReload(callback) {
 // Watch Task
 function watchTask() {
   watch(paths.src.html, series(fileincludeTask, syncReload));
-  watch([paths.src.images], series(images));
-  watch([paths.src.tailwind, paths.src.html, TAILWIND_CONFIG], series(css, syncReload));
+  watch([paths.src.images, paths.src.fonts], series(images, fonts));
+  watch(
+    [paths.src.tailwind, paths.src.html, TD_CONFIG],
+    series(css, syncReload)
+  );
 }
 
 // Default Task Preview
@@ -164,7 +165,6 @@ exports.build = series(
   parallel(cleanDist),
   html,
   images,
-  css,
   js,
   fonts,
   copyLibs,
@@ -172,12 +172,12 @@ exports.build = series(
 );
 
 // export tasks
+exports.css = css;
 exports.html = html;
 exports.fileincludeTask = fileincludeTask;
 exports.copyLibs = copyLibs;
 exports.cleanTemp = cleanTemp;
 exports.cleanDist = cleanDist;
 exports.images = images;
-exports.css = css;
 exports.fonts = fonts;
 exports.js = js;
