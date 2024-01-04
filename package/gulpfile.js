@@ -1,7 +1,5 @@
 // Load plugins
 const { src, dest, watch, parallel, series } = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
-const gulpautoprefixer = require("gulp-autoprefixer");
 const browsersync = require("browser-sync").create();
 const fileinclude = require("gulp-file-include");
 const useref = require("gulp-useref");
@@ -43,10 +41,10 @@ const paths = {
   },
   dist: {
     basedist: "./dist",
+    css: "./dist/assets/css",
     js: "./dist/assets/js",
     images: "./dist/assets/images",
     fonts: "./dist/assets/fonts",
-    css: "./dist/assets/css",
     libs: "./dist/assets/libs",
   },
 };
@@ -55,13 +53,16 @@ const paths = {
 // Compile tailwind to CSS
 //**************************//
 
-function css(callback) {
-  return src(paths.src.tailwind)
-    .pipe(postcss([tailwindcss(TD_CONFIG), require("autoprefixer")]))
-    .pipe(concat({ path: "theme.css" }))
-    .pipe(dest(paths.src.css))
-    .pipe(browsersync.stream());
-  callback();
+function tcss() {
+  return (
+    src(paths.src.tailwind)
+      .pipe(postcss([tailwindcss(TD_CONFIG), require("autoprefixer")]))
+      .pipe(concat({ path: "theme.css" }))
+      .pipe(minifyCSS())
+      //.pipe(gulpIf("./src/assets/css/**/*.css", minifyCSS()))
+      .pipe(dest(paths.src.css))
+      .pipe(browsersync.stream())
+  );
 }
 
 //**************************//
@@ -109,15 +110,14 @@ function images() {
 function fonts() {
   return src(paths.src.fonts).pipe(dest(paths.dist.fonts));
 }
-// Image
+// Js
 function js() {
   return src(paths.src.js).pipe(dest(paths.dist.js));
 }
-// function css() {
-//   return src("./src/assets/css/**/*.css")
-//     .pipe(gulpif("./src/assets/css/**/*.css", minifyCss()))
-//     .pipe(dest(paths.dist.css));
-// }
+// Css
+function css() {
+  return src("./src/assets/css/**/*.css").pipe(dest(paths.dist.css));
+}
 
 // Clean .temp folder
 function cleanTemp(callback) {
@@ -153,7 +153,7 @@ function watchTask() {
   watch([paths.src.images, paths.src.fonts], series(images, fonts));
   watch(
     [paths.src.tailwind, paths.src.html, TD_CONFIG],
-    series(css, syncReload)
+    series(tcss, syncReload)
   );
 }
 
@@ -165,6 +165,8 @@ exports.build = series(
   parallel(cleanDist),
   html,
   images,
+  tcss,
+  css,
   js,
   fonts,
   copyLibs,
