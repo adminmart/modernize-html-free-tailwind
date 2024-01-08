@@ -762,13 +762,29 @@ function resolvePlugins(context, root) {
         _corePlugins.variantPlugins["supportsVariants"],
         _corePlugins.variantPlugins["reducedMotionVariants"],
         _corePlugins.variantPlugins["prefersContrastVariants"],
-        _corePlugins.variantPlugins["printVariant"],
         _corePlugins.variantPlugins["screenVariants"],
         _corePlugins.variantPlugins["orientationVariants"],
         _corePlugins.variantPlugins["directionVariants"],
         _corePlugins.variantPlugins["darkVariants"],
-        _corePlugins.variantPlugins["forcedColorsVariants"]
+        _corePlugins.variantPlugins["forcedColorsVariants"],
+        _corePlugins.variantPlugins["printVariant"]
     ];
+    // This is a compatibility fix for the pre 3.4 dark mode behavior
+    // `class` retains the old behavior, but `selector` keeps the new behavior
+    let isLegacyDarkMode = context.tailwindConfig.darkMode === "class" || Array.isArray(context.tailwindConfig.darkMode) && context.tailwindConfig.darkMode[0] === "class";
+    if (isLegacyDarkMode) {
+        afterVariants = [
+            _corePlugins.variantPlugins["supportsVariants"],
+            _corePlugins.variantPlugins["reducedMotionVariants"],
+            _corePlugins.variantPlugins["prefersContrastVariants"],
+            _corePlugins.variantPlugins["darkVariants"],
+            _corePlugins.variantPlugins["screenVariants"],
+            _corePlugins.variantPlugins["orientationVariants"],
+            _corePlugins.variantPlugins["directionVariants"],
+            _corePlugins.variantPlugins["forcedColorsVariants"],
+            _corePlugins.variantPlugins["printVariant"]
+        ];
+    }
     return [
         ...corePluginList,
         ...beforeVariants,

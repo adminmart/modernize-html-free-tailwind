@@ -14,7 +14,6 @@
     "@preline/input-number": "^2.0.1",
     "@preline/overlay": "^1.4.0",
     "@preline/tooltip": "^2.0.1",
-    "@tabler/icons": "^2.44.0",
     "apexcharts": "^3.45.1",
     "dropzone": "^6.0.0-beta.2",
     "iconify-icon": "^1.0.8",
