@@ -1,4 +1,4 @@
-# <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-free/dist/index.html/?ref=5">Modernize Html Free Tailwind</a>
+# <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-free/dist/index.html">Modernize Html Free Tailwind</a>
 Modernize Tailwind Dashboard Template
 
 <!-- Main image of Template -->
