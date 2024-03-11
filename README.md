@@ -1,59 +1,36 @@
-# <a href="https://modernize-nextjs-free.vercel.app/?ref=5">Modernize-nextjs-free</a>
-Modernize Free Next 13 Admin Template with Material Ui + Typescript 
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/adminmart/Modernize-Nextjs-Free" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" aria-label="Star adminmart/Modernize-Nextjs-Free on GitHub">Give a Star</a>
+# <a href="[https://demos.adminmart.com/free/bootstrap/modernize-bootstrap-lite/src/html/index.html](https://bootstrapdemos.adminmart.com/modernize-tailwind-free/dist/index.html)/?ref=5">Modernize Free Bootstrap</a>
+Modernize Bootstrap 5 admin Template
+
 <!-- Main image of Template -->
-<a target="_blank" href="https://adminmart.com/product/modernize-free-nextjs-admin-template/?ref=5">
-  <img src="https://adminmart.com/wp-content/uploads/2023/03/modernize-free-next-js-admin-template.png" />
+<a target="_blank" href="https://adminmart.com/product/modernize-free-bootstrap-5-admin-template/?ref=5">
+  <img src="https://adminmart.com/wp-content/uploads/2023/02/modenize-free-bootstrap-admin-template.png" />
 </a>
 
-
-# Installation 👨🏻‍💻
-
-> We recommend you use npm
-
-1. Install all packages
-
-```
-npm i
-```
-
-2. Run Development Server
-
-```
-npm run dev
-```
-
-3. Build your project
-
-```
-npm run build
-```
 
 # Compare with Premium Version 🌓
 
 <table>
 <thead>
 <tr>
-<th>Modernize NextJs Free Version</th>
-<th>Modernize NextJs Pro Version</th>
+<th>Modernize Bootstrap Free Version</th>
+<th>Modernize Bootstrap Pro Version</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td>
-    <a href="https://modernize-nextjs-free.netlify.app/?ref=5">Live Preview</a>
+    <a href="https://demos.adminmart.com/free/bootstrap/modernize-bootstrap-lite/src/html/index.html/?ref=5">Live Preview</a>
   </td>
   <td>
-  <a href="https://modernize-nextjs-main.netlify.app/?ref=5">Live Preview</a>
+  <a href="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/landingpage/index.html/?ref=5">Live Preview</a>
   </td>
 </tr>
 <tr>
   <td>
-    <a href="https://adminmart.com/product/modernize-free-nextjs-admin-template/?ref=5">Download Now</a>
+    <a href="https://adminmart.com/product/modernize-free-bootstrap-5-admin-template/?ref=5">Download Now</a>
   </td>
   <td>
-    <a href="https://adminmart.com/product/modernize-next-js-admin-dashboard/?ref=5">Purchase Now</a>
+    <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/?ref=5">Purchase Now</a>
   </td>
 </tr>
 <tr>
@@ -61,7 +38,7 @@ npm run build
   1 Basic Dashboard
   </td>
   <td>
-  2+ Stunning Dashboards
+  6+ Stunning Dashboards
   </td>
 </tr>
 <tr>
@@ -74,18 +51,10 @@ npm run build
 </tr>
 <tr>
   <td>
-  NextJs 13
+  Bootstrap 5 Version
   </td>
   <td>
-  NextJs 13
-  </td>
-</tr>
-<tr>
-  <td>
-  React 18+
-  </td>
-  <td>
-  React 18+
+  Bootstrap 5 Version
   </td>
 </tr>
 <tr>
@@ -98,10 +67,10 @@ npm run build
 </tr>
 <tr>
   <td>
-  7+ Pages Template
+  10+ Pages Template
   </td>
   <td>
-  65+ Page Templates
+  425+ Page Templates
   </td>
 </tr>
 <tr>
@@ -109,7 +78,7 @@ npm run build
   5+ UI Components
   </td>
   <td>
-  45+ UI Components
+  100+ UI Components
   </td>
 </tr>
 <tr>
@@ -141,7 +110,7 @@ npm run build
   -
   </td>
   <td>
-  1 Year Premium Support
+  Right-to-Left(RTL) Verion
   </td>
 </tr>
 <tr>
@@ -149,15 +118,15 @@ npm run build
   -
   </td>
   <td>
-  15+ Integrated Plugins
+  25+ Integrated Plugins
   </td>
 </tr>
 <tr>
   <td>
-  Material Ui
+  -
   </td>
   <td>
-  Material Ui
+  1 Year Premium Support
   </td>
 </tr>
 </tbody>
@@ -204,12 +173,12 @@ npm run build
 
 # Upgrade to Premium version
 
-<a target="_blank" href="https://adminmart.com/product/modernize-next-js-admin-dashboard?ref=5">
-  <img src="https://adminmart.com/wp-content/uploads/2023/03/modernize-next-js-admin-dashboard.png" alt="">
+<a target="_blank" href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/?ref=5">
+  <img src="https://adminmart.com/wp-content/uploads/2023/02/modernize-bootstrap-5-admin-template.png" alt="">
 </a>
 <p>
-  Checkout our premium version of Modernize Next Js Admin Lite for lots more features and ready to use page templates.<br>
-  <a href="https://modernize-nextjs-main.netlify.app/?ref=5">Check Live Preview</a> | <a href="https://adminmart.com/product/modernize-next-js-admin-dashboard/?ref=5">Download</a>
+  Checkout our premium version of Modernize Bootstrap Admin Lite for lots more features and ready to use page templates.<br>
+  <a href="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/landingpage/index.html/?ref=5">Check Live Preview</a> | <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/?ref=5">Download</a>
 </p>
 
 
