@@ -1,4 +1,4 @@
-# <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-free/dist/index.html">Modernize Html Free Tailwind</a>
+# <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-free/dist/index.html/?ref=5">Modernize Html Free Tailwind</a>
 Modernize Tailwind Dashboard Template
 
 <!-- Main image of Template -->
@@ -12,25 +12,25 @@ Modernize Tailwind Dashboard Template
 <table>
 <thead>
 <tr>
-<th>Modernize Bootstrap Free Version</th>
-<th>Modernize Bootstrap Pro Version</th>
+<th>Modernize Free Tailwind Admin Version</th>
+<th>Modernize Tailwind Dashboard Template Version</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td>
-    <a href="https://demos.adminmart.com/free/bootstrap/modernize-bootstrap-lite/src/html/index.html/?ref=5">Live Preview</a>
+    <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-free/dist/index.html/?ref=5">Live Preview</a>
   </td>
   <td>
-  <a href="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/landingpage/index.html/?ref=5">Live Preview</a>
+  <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/landingpage/index.html/?ref=5">Live Preview</a>
   </td>
 </tr>
 <tr>
   <td>
-    <a href="https://adminmart.com/product/modernize-free-bootstrap-5-admin-template/?ref=5">Download Now</a>
+    <a href="https://adminmart.com/product/modernize-free-tailwind-admin/?ref=5">Download Now</a>
   </td>
   <td>
-    <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/?ref=5">Purchase Now</a>
+    <a href="https://adminmart.com/product/modernize-tailwind-dashboard-template//?ref=5">Purchase Now</a>
   </td>
 </tr>
 <tr>
