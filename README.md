@@ -38,7 +38,7 @@ Modernize Tailwind Dashboard Template
   1 Basic Dashboard
   </td>
   <td>
-  6+ Stunning Dashboards
+  5+ Stunning Dashboards
   </td>
 </tr>
 <tr>
@@ -51,10 +51,10 @@ Modernize Tailwind Dashboard Template
 </tr>
 <tr>
   <td>
-  Bootstrap 5 Version
+  Tailwind Css 3x
   </td>
   <td>
-  Bootstrap 5 Version
+  Tailwind Css 3x
   </td>
 </tr>
 <tr>
@@ -91,10 +91,10 @@ Modernize Tailwind Dashboard Template
 </tr>
 <tr>
   <td>
-  SCSS Base CSS
+  Tailwind Css with Preline UI
   </td>
   <td>
-  SCSS Base CSS
+  Tailwind Css with Preline UI
   </td>
 </tr>
 <tr>
@@ -142,6 +142,7 @@ Modernize Tailwind Dashboard Template
 <th>React</th>
 <th>Vue</th>
 <th>Nuxt Js</th>
+<th>Next Js</th>
 </tr>
 </thead>
 <tbody>
@@ -164,6 +165,12 @@ Modernize Tailwind Dashboard Template
   <td>
   <a href="https://adminmart.com/product/modernize-nuxt-js-admin-dashboard/?ref=5" rel="nofollow" width="150px">
     <img src="https://adminmart.com/wp-content/uploads/2023/02/modernize-nuxt-js-admin-dashboard.png" alt="" style="max-width:150px;">
+  </a>
+</td>
+</td>
+  <td>
+  <a href="https://adminmart.com/product/modernize-next-js-admin-dashboard/?ref=5" rel="nofollow" width="150px">
+    <img src="https://adminmart.com/wp-content/uploads/2023/03/modernize-next-js-admin-dashboard-1-min.png" alt="" style="max-width:150px;">
   </a>
 </td>
 </tr>
