@@ -30,7 +30,7 @@ Modernize Tailwind Dashboard Template
     <a href="https://adminmart.com/product/modernize-free-tailwind-admin/?ref=5">Download Now</a>
   </td>
   <td>
-    <a href="https://adminmart.com/product/modernize-tailwind-dashboard-template//?ref=5">Purchase Now</a>
+    <a href="https://adminmart.com/product/modernize-tailwind-dashboard-template/?ref=5">Purchase Now</a>
   </td>
 </tr>
 <tr>
