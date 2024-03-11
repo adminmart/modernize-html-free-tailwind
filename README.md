@@ -1,4 +1,4 @@
-# <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-free/dist/index.html/?ref=5">Modernize Html Free Tailwind</a>
+# <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-free/dist/index.html">Modernize Html Free Tailwind</a>
 Modernize Tailwind Dashboard Template
 
 <!-- Main image of Template -->
@@ -19,10 +19,10 @@ Modernize Tailwind Dashboard Template
 <tbody>
 <tr>
   <td>
-    <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-free/dist/index.html/?ref=5">Live Preview</a>
+    <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-free/dist/index.html">Live Preview</a>
   </td>
   <td>
-  <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/landingpage/index.html/?ref=5">Live Preview</a>
+  <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/landingpage/index.html">Live Preview</a>
   </td>
 </tr>
 <tr>
@@ -139,7 +139,7 @@ Modernize Tailwind Dashboard Template
 </a>
 <p>
   Checkout our premium version of Modernize Tailwind Dashboard Template for lots more features and ready to use page templates.<br>
-  <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/landingpage/index.html/?ref=5">Check Live Preview</a> | <a href="https://adminmart.com/product/modernize-tailwind-dashboard-template//?ref=5">Download</a>
+  <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/landingpage/index.html">Check Live Preview</a> | <a href="https://adminmart.com/product/modernize-tailwind-dashboard-template/?ref=5">Download</a>
 </p>
 
 <!-- Versions of Template -->
