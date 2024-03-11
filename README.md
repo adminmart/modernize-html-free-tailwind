@@ -132,6 +132,15 @@ Modernize Tailwind Dashboard Template
 </tbody>
 </table>
 
+# Upgrade to Premium version
+
+<a target="_blank" href="https://adminmart.com/product/modernize-tailwind-dashboard-template/?ref=5">
+  <img src="https://adminmart.com/wp-content/uploads/2024/03/modernize-tailwind-dashboard-template-am.jpg" alt="">
+</a>
+<p>
+  Checkout our premium version of Modernize Tailwind Dashboard Template for lots more features and ready to use page templates.<br>
+  <a href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/landingpage/index.html/?ref=5">Check Live Preview</a> | <a href="https://adminmart.com/product/modernize-tailwind-dashboard-template//?ref=5">Download</a>
+</p>
 
 <!-- Versions of Template -->
 # Versions
@@ -140,9 +149,8 @@ Modernize Tailwind Dashboard Template
 <tr>
 <th>Bootstrap</th>
 <th>React</th>
-<th>Vue</th>
-<th>Nuxt Js</th>
 <th>Next Js</th>
+<th>Nuxt Js</th>
 </tr>
 </thead>
 <tbody>
@@ -158,8 +166,8 @@ Modernize Tailwind Dashboard Template
   </a>
 </td>
 <td>
-  <a href="https://adminmart.com/product/modernize-vuetify-vue-admin-dashboard/?ref=5" rel="nofollow" width="150px">
-    <img src="https://adminmart.com/wp-content/uploads/2023/02/modernize-vuetify-admin-dashboard.png" alt="" style="max-width:150px;">
+  <a href="https://adminmart.com/product/modernize-next-js-admin-dashboard/?ref=5" rel="nofollow" width="150px">
+    <img src="https://adminmart.com/wp-content/uploads/2023/03/modernize-next-js-admin-dashboard-1-min.png" alt="" style="max-width:150px;">
   </a>
 </td>
   <td>
@@ -168,25 +176,13 @@ Modernize Tailwind Dashboard Template
   </a>
 </td>
 </td>
-  <td>
-  <a href="https://adminmart.com/product/modernize-next-js-admin-dashboard/?ref=5" rel="nofollow" width="150px">
-    <img src="https://adminmart.com/wp-content/uploads/2023/03/modernize-next-js-admin-dashboard-1-min.png" alt="" style="max-width:150px;">
-  </a>
-</td>
+  
 </tr>
 </tbody>
 </table>
 
 
-# Upgrade to Premium version
 
-<a target="_blank" href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/?ref=5">
-  <img src="https://adminmart.com/wp-content/uploads/2023/02/modernize-bootstrap-5-admin-template.png" alt="">
-</a>
-<p>
-  Checkout our premium version of Modernize Bootstrap Admin Lite for lots more features and ready to use page templates.<br>
-  <a href="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/landingpage/index.html/?ref=5">Check Live Preview</a> | <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/?ref=5">Download</a>
-</p>
 
 
 <!-- Useful Links of Template -->
