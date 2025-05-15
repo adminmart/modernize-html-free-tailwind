@@ -6,14 +6,14 @@ const useref = require("gulp-useref");
 const gulpIf = require("gulp-if");
 const npmDist = require("gulp-npm-dist");
 const postcss = require("gulp-postcss");
-const TD_CONFIG = "./tailwind.config.js";
+
 const cssnano = require("cssnano");
 const replace = require("gulp-replace");
 const del = require("del");
 const autoprefixer = require("autoprefixer");
 const terser = require("gulp-terser");
 const minifyCSS = require("gulp-clean-css");
-const tailwindcss = require("tailwindcss");
+const tailwindcss = require("@tailwindcss/postcss");
 const concat = require("gulp-concat");
 
 //**************************//
@@ -53,16 +53,20 @@ const paths = {
 // Compile tailwind to CSS
 //**************************//
 
+// New v4 config
 function tcss() {
-  return (
-    src(paths.src.tailwind)
-      .pipe(postcss([tailwindcss(TD_CONFIG), require("autoprefixer")]))
-      .pipe(concat({ path: "theme.css" }))
-      .pipe(minifyCSS())
-      //.pipe(gulpIf("./src/assets/css/**/*.css", minifyCSS()))
-      .pipe(dest(paths.src.css))
-      .pipe(browsersync.stream())
-  );
+  return src(paths.src.tailwind)
+    //  .pipe(postcss([tailwindcss(TD_CONFIG), require("autoprefixer")]))
+     .pipe(
+      postcss([
+        tailwindcss(),
+        autoprefixer(),
+        cssnano(), 
+      ])
+    )
+    .pipe(concat("theme.css"))
+    .pipe(dest(paths.src.css))
+    .pipe(browsersync.stream());
 }
 
 //**************************//
@@ -152,7 +156,7 @@ function watchTask() {
   watch(paths.src.html, series(fileincludeTask, syncReload));
   watch([paths.src.images, paths.src.fonts], series(images, fonts));
   watch(
-    [paths.src.tailwind, paths.src.html, TD_CONFIG],
+    [paths.src.tailwind, paths.src.html],
     series(tcss, syncReload)
   );
 }

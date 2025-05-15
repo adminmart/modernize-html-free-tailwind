@@ -1,25 +1,33 @@
 
 
 <!-- ========== HEADER ========== -->
+<header class="full-container w-full text-sm py-3 px-5 bg-white lg:sticky z-30">
+    <nav class=" w-full  flex items-center justify-between "
+        aria-label="Global">
+        <ul class="icon-nav flex items-center gap-4">
+            <li class="relative xl:hidden">
+                <a class="text-xl  icon-hover cursor-pointer text-heading"
+                    id="headerCollapse"
+                    data-hs-overlay="#application-sidebar-brand"
+                    aria-controls="application-sidebar-brand"
+                    aria-label="Toggle navigation" href="javascript:void(0)">
+                    <i class="ti ti-menu-2 relative z-1"></i>
+                </a>
+            </li>
 
-    <nav class=" w-full bg-gray-800  flex items-center justify-between" aria-label="Global">
-            <ul class="icon-nav flex items-center gap-4">
-                <li class="relative xl:hidden">
-                    <a class="text-xl  icon-hover cursor-pointer text-heading"
-                        id="headerCollapse" data-hs-overlay="#application-sidebar-brand"
-                        aria-controls="application-sidebar-brand" aria-label="Toggle navigation" href="javascript:void(0)">
-                        <i class="ti ti-menu-2 relative z-1"></i>
-                    </a>
-                </li>
-           
             <li class="relative">
                 @@include("./header-components/dd-notification.html")
             </li>
-            </ul>
+        </ul>
         <div class="flex items-center gap-4">
-          <a href="#" class="btn font-medium hover:bg-blue-700 py-2" aria-current="page">Download Free</a>
+            <a
+                href="https://adminmart.com/product/modernize-tailwind-nextjs-dashboard-template/?ref=56#product-demo-section"
+                target="_blank"
+                class="btn font-medium hover:bg-blue-700/80 py-2"
+                aria-current="page">Check Pro Template</a>
             @@include("./header-components/dd-profile.html")
         </div>
     </nav>
+</header>
 
-  <!-- ========== END HEADER ========== -->
+<!-- ========== END HEADER ========== -->

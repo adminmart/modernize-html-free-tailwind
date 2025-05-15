@@ -1,5 +1,5 @@
 /**
- * simplebar - v6.2.5
+ * simplebar - v6.3.1
  * Scrollbars, simpler.
  * https://grsmto.github.io/simplebar/
  *
@@ -7,7 +7,6 @@
  * Under MIT License
  */
 
-import canUseDOM from 'can-use-dom';
 import SimpleBarCore from 'simplebar-core';
 
 /******************************************************************************
@@ -41,7 +40,7 @@ function __extends(d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
 
-var _a = SimpleBarCore.helpers, getOptions = _a.getOptions, addClasses = _a.addClasses;
+var _a = SimpleBarCore.helpers, getOptions = _a.getOptions, addClasses = _a.addClasses, canUseDOM = _a.canUseDOM;
 var SimpleBar = /** @class */ (function (_super) {
     __extends(SimpleBar, _super);
     function SimpleBar() {
@@ -102,7 +101,7 @@ var SimpleBar = /** @class */ (function (_super) {
             this.wrapperEl.appendChild(this.maskEl);
             this.wrapperEl.appendChild(this.placeholderEl);
             this.el.appendChild(this.wrapperEl);
-            (_a = this.contentWrapperEl) === null || _a === void 0 ? void 0 : _a.setAttribute('tabindex', '0');
+            (_a = this.contentWrapperEl) === null || _a === void 0 ? void 0 : _a.setAttribute('tabindex', this.options.tabIndex.toString());
             (_b = this.contentWrapperEl) === null || _b === void 0 ? void 0 : _b.setAttribute('role', 'region');
             (_c = this.contentWrapperEl) === null || _c === void 0 ? void 0 : _c.setAttribute('aria-label', this.options.ariaLabel);
         }
@@ -168,17 +167,17 @@ var SimpleBar = /** @class */ (function (_super) {
                 }
             });
             mutation.removedNodes.forEach(function (removedNode) {
+                var _a;
                 if (removedNode.nodeType === 1) {
                     if (removedNode.getAttribute('data-simplebar') === 'init') {
-                        SimpleBar.instances.has(removedNode) &&
-                            !document.documentElement.contains(removedNode) &&
-                            SimpleBar.instances.get(removedNode).unMount();
+                        !document.documentElement.contains(removedNode) &&
+                            ((_a = SimpleBar.instances.get(removedNode)) === null || _a === void 0 ? void 0 : _a.unMount());
                     }
                     else {
                         Array.prototype.forEach.call(removedNode.querySelectorAll('[data-simplebar="init"]'), function (el) {
-                            SimpleBar.instances.has(el) &&
-                                !document.documentElement.contains(el) &&
-                                SimpleBar.instances.get(el).unMount();
+                            var _a;
+                            !document.documentElement.contains(el) &&
+                                ((_a = SimpleBar.instances.get(el)) === null || _a === void 0 ? void 0 : _a.unMount());
                         });
                     }
                 }

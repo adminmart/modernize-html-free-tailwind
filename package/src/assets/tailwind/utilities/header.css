@@ -1,8 +1,8 @@
-
-.icon-nav li a:hover.icon-hover{
-    color:#5D87FF ;
+.icon-nav li a:hover.icon-hover {
+    color: #5D87FF;
 }
-.icon-hover:hover::before{
+
+.icon-hover:hover::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -13,4 +13,17 @@
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
     background-color: #ECF2FF;
+}
+
+.app-topstrip {
+    background: linear-gradient(90deg, #001138 0%, #001E66 100%);
+}
+
+.app-topstrip .text-linear-gradient {
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #FFFFFF 0%, #3772FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }

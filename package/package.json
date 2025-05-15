@@ -1,6 +1,6 @@
 {
-  "name": "modernize-tailwind",
-  "version": "1.0.0",
+  "name": "modernize-tailwind-free",
+  "version": "2.0.0",
   "description": "modernize-tailwind",
   "main": "index.js",
   "scripts": {
@@ -10,22 +10,22 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@preline/dropdown": "^1.3.0",
-    "@preline/input-number": "^2.0.1",
-    "@preline/overlay": "^1.4.0",
-    "@preline/tooltip": "^2.0.1",
-    "apexcharts": "^3.45.1",
+    "@preline/dropdown": "3.0.1",
+    "@preline/input-number": "3.0.0",
+    "@preline/overlay": "3.0.0",
+    "@preline/tooltip": "3.0.0",
+    "apexcharts": "3.43.0",
     "dropzone": "^6.0.0-beta.2",
     "iconify-icon": "^1.0.8",
     "jquery": "^3.7.0",
-    "preline": "^1.9.0",
-    "prismjs": "^1.29.0",
+    "preline": "3.0.1",
     "simplebar": "^6.2.5",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "4.1.5"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.6",
-    "@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/postcss": "4.1.5",
+    "@tailwindcss/forms": "0.5.10",
+    "@tailwindcss/typography": "0.5.16",
     "autoprefixer": "^10.4.16",
     "browser-sync": "^2.29.3",
     "cssnano": "^6.0.1",
@@ -42,6 +42,6 @@
     "gulp-replace": "1.1.4",
     "gulp-terser": "^2.1.0",
     "gulp-useref": "5.0.0",
-    "postcss": "^8.4.31"
+    "postcss": "^8.4.49"
   }
 }

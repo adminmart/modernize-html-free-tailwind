@@ -17,16 +17,136 @@
 	<title>Modernize TailwindCSS HTML Admin Template</title>
 </head>
 
-<body class="DEFAULT_THEME bg-white">
+<body class="bg-info/5">
 	<main>
-		<!--start the project-->
-		<div id="main-wrapper" class=" flex">
-			<aside id="application-sidebar-brand"
-				class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full  transform hidden xl:block xl:translate-x-0 xl:end-auto xl:bottom-0 fixed top-0 with-vertical h-screen z-[999] flex-shrink-0 border-r-[1px] w-[270px] border-gray-400  bg-white  left-sidebar   transition-all duration-300" >
-				<!-- ---------------------------------- -->
+		<div class="py-4 px-5 sticky top-0 app-topstrip z-50 w-full">
+    <div class="flex lg:flex-row flex-col gap-3 justify-between items-center">
+        <div class="flex gap-6 items-center">
+            <a href="https://adminmart.com" target="_blank">
+                <img
+                    src="../assets/images/logos/logo-adminmart.svg" alt
+                    class="max-w-36"
+                    aria-hidden="true">
+            </a>
+            <span
+                class="border-e border-gray-400/50 h-5 w-[1px] lg:block hidden"></span>
+            <a href="https://adminmart.com/templates/tailwind-templates/"
+                target="_blank"
+                class="xl:flex hidden items-center gap-2 text-base text-white hover:text-primary">
+                <iconify-icon class="text-xl"
+                    icon="solar:window-frame-linear"></iconify-icon> Templates
+            </a>
+            <a href="https://adminmart.com/support/" target="_blank"
+                class="xl:flex hidden items-center gap-2 text-base text-white hover:text-primary">
+                <iconify-icon class="text-xl"
+                    icon="solar:question-circle-linear"></iconify-icon> Help
+            </a>
+            <a href="https://adminmart.com/hire-us/" target="_blank"
+                class="xl:flex hidden items-center gap-2 text-base text-white hover:text-primary">
+                <iconify-icon class="text-xl"
+                    icon="solar:case-round-linear"></iconify-icon> Hire Us
+            </a>
+        </div>
+        <div class="flex lg:flex-row flex-col items-center gap-3">
+            <h5
+                class="text-sm uppercase text-linear-gradient font-semibold">Checkout
+                Pro Version</h5>
+            <div class="flex gap-3 items-center">
+
+                <div id="hs-dropdown-with-icons"
+                    class="m-1 hs-dropdown [--trigger:hover] relative inline-flex border cursor-pointer border-white/50 rounded-sm px-5 py-1.5 text-white tex-base capitalize font-medium gap-3 items-center hover:bg-blue-700/80 hover:border-blue-700/80">
+                    live Preview <iconify-icon class="text-xl"
+                        icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    <div
+                        class="hs-dropdown-menu p-4 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden   bg-white shadow-md rounded-lg mt-2  after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full z-20 "
+                        role="menu" aria-labelledby="hs-dropdown-with-icons">
+                        <div class="space-y-1">
+                            <a
+                                href="https://adminmart.com/product/modernize-tailwind-nextjs-dashboard-template/?ref=56#product-demo-section"
+                                target="_blank"
+                                class="flex gap-3 items-center px-4 py-2 hover:bg-primary/10 text-dark text-base rounded-sm ">
+                                <img class="h-5 w-5 "
+                                    src="../assets/images/technology/tailwind-icon.svg"
+                                    alt="icon">
+                                Tailwind Version
+                            </a>
+
+                            <a
+                                href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/?ref=56#product-demo-section"
+                                target="_blank"
+                                class="flex gap-3 items-center px-4 py-2 hover:bg-primary/10 text-dark text-base rounded-sm ">
+                                <img class="h-5 w-5 "
+                                    src="../assets/images/technology/bt-cat-icon.svg"
+                                    alt="icon">
+                                Bootstrap Version
+                            </a>
+
+                            <a
+                                href="https://adminmart.com/product/modernize-angular-material-dashboard/?ref=56#product-demo-section"
+                                target="_blank"
+                                class="flex gap-3 items-center px-4 py-2 hover:bg-primary/10 text-dark text-base rounded-sm ">
+                                <img class="h-5 w-5 "
+                                    src="../assets/images/technology/angular-cat-icon.svg"
+                                    alt="icon">
+                                Angular Version
+                            </a>
+
+                            <a
+                                href="https://adminmart.com/product/modernize-react-mui-dashboard-theme/?ref=56#product-demo-section"
+                                target="_blank"
+                                class="flex gap-3 items-center px-4 py-2 hover:bg-primary/10 text-dark text-base rounded-sm ">
+                                <img class="h-5 w-5 "
+                                    src="../assets/images/technology/react-cat-icon.svg"
+                                    alt="icon">
+                                Reactjs Version
+                            </a>
+                            <a
+                                href="https://adminmart.com/product/modernize-vuetify-vue-admin-dashboard/?ref=56#product-demo-section"
+                                target="_blank"
+                                class="flex gap-3 items-center px-4 py-2 hover:bg-primary/10 text-dark text-base rounded-sm ">
+                                <img class="h-5 w-5 "
+                                    src="../assets/images/technology/vue-cat-icon.svg"
+                                    alt="icon">
+                                Vuejs Version
+                            </a>
+
+                            <a
+                                href="https://adminmart.com/product/modernize-nuxt-js-admin-dashboard/?ref=56#product-demo-section"
+                                target="_blank"
+                                class="flex gap-3 items-center px-4 py-2 hover:bg-primary/10 text-dark text-base rounded-sm ">
+                                <img class="h-5 w-5 "
+                                    src="../assets/images/technology/nuxt-cat-icon.svg"
+                                    alt="icon">
+                                Nuxtjs Version
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <a
+                    href="https://adminmart.com/product/modernize-tailwind-nextjs-dashboard-template/?ref=56#product-demo-section"
+                    target="_blank"
+                    class="flex items-center gap-2 text-base font-medium  text-white bg-primary hover:bg-blue-700/80 rounded-sm  px-4 py-2">
+                    <iconify-icon class="text-lg"
+                        icon="solar:crown-linear"></iconify-icon> Get Pro
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+			<!--start the project-->
+			<div id="main-wrapper" class="flex ">
+
+				<aside id="application-sidebar-brand"
+					class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full  transform hidden xl:block xl:translate-x-0 xl:end-auto xl:bottom-0 fixed lg:top-[78px] top-0 with-vertical h-screen z-[999] flex-shrink-0 border-r-[1px] w-[270px] border-gray-400/20  bg-white left-sidebar   transition-all duration-300">
+					<!-- ---------------------------------- -->
 <!-- Start Vertical Layout Sidebar -->
 <!-- ---------------------------------- -->
-<div class="p-5" >
+<div class="p-5">
   
   <a href="../" class="text-nowrap">
     <img
@@ -37,178 +157,1759 @@
 
 
 </div>
-<div class="scroll-sidebar" data-simplebar="">
- <div class="px-6 mt-8" >
+<div class="scroll-sidebar" data-simplebar>
+  <div class="px-6 mt-8">
     <nav class=" w-full flex flex-col sidebar-nav">
-      <ul  id="sidebarnav" class="text-gray-600 text-sm">
+      <ul id="sidebarnav" class="text-dark text-sm">
         <li class="text-xs font-bold pb-4">
-          <i class="ti ti-dots nav-small-cap-icon text-lg hidden text-center"></i>
+          <i
+            class="ti ti-dots nav-small-cap-icon text-lg hidden text-center"></i>
           <span>HOME</span>
         </li>
 
         <li class="sidebar-item">
-          <a class="sidebar-link gap-3 py-2 px-3  rounded-md  w-full flex items-center hover:text-blue-600 hover:bg-blue-500" href="../index.html"
-           >
-            <i class="ti ti-layout-dashboard  text-xl"></i> <span>Dashboard</span>
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center hover:text-primary hover:bg-primary/15"
+            href="../index.html">
+            <i class="ti ti-layout-dashboard  text-xl"></i>
+            <span>Dashboard</span>
+          </a>
+
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/index.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-brand-chrome  text-xl"></i>
+              <span>Modern</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/index2.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-shopping-cart  text-xl"></i>
+              <span>eCommerce</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
           </a>
         </li>
 
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/index3.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-currency-dollar  text-xl"></i>
+              <span>NFT</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/index4.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-cpu  text-xl"></i>
+              <span>Crypto</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/index5.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-activity-heartbeat  text-xl"></i>
+              <span>General</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/index6.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-playlist  text-xl"></i>
+              <span>Music</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+
+        <li
+          class="hs-accordion sidebar-item"
+          id="blog-accordion">
+          <a href="#frnt"
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <i class="ti ti-app-window text-xl flex-shrink-0"></i> <span
+              class="hide-menu">Frontend Pages</span>
+            <span class="hide-menu ms-auto">
+              <i
+                class="ti ti-chevron-down text-lg ms-auto  hs-accordion-active:hidden "></i>
+              <i
+                class="ti ti-chevron-up text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></i>
+            </span>
+          </a>
+
+          <div id="blog-accordion"
+            class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/frontend-homepage.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Homepage</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/frontend-aboutpage.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">About Us</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/frontend-blogpage.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Blog</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/frontend-blogdetailpage.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Blog Detail</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/frontend-portfoliopage.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Portfolio</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/frontend-pricingpage.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Pricing</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/frontend-contactpage.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Contact</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
         <li class="text-xs font-bold mb-4 mt-8">
-          <i class="ti ti-dots nav-small-cap-icon text-lg hidden text-center"></i>
+          <i
+            class="ti ti-dots nav-small-cap-icon text-lg hidden text-center"></i>
           <span>UI COMPONENTS</span>
         </li>
 
         <li class="sidebar-item">
-          <a class="sidebar-link gap-3 py-2 px-3  rounded-md w-full flex items-center hover:text-blue-600 hover:bg-blue-500" href="../components/buttons.html"
-           >
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md w-full flex items-center hover:text-primary hover:bg-primary/15"
+            href="../components/buttons.html">
             <i class="ti ti-article  text-xl"></i> <span>Buttons</span>
           </a>
         </li>
 
         <li class="sidebar-item">
-          <a class="sidebar-link gap-3 py-2 px-3  rounded-md w-full flex items-center hover:text-blue-600 hover:bg-blue-500" href="../components/alerts.html"
-           >
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md w-full flex items-center hover:text-primary hover:bg-primary/15"
+            href="../components/alerts.html">
             <i class="ti ti-alert-circle  text-xl"></i> <span>Alerts</span>
           </a>
-        </li>        
+        </li>
 
         <li class="sidebar-item">
-          <a class="sidebar-link gap-3 py-2 px-3  rounded-md w-full flex items-center hover:text-blue-600 hover:bg-blue-500" href="../components/cards.html"
-           >
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md w-full flex items-center hover:text-primary hover:bg-primary/15"
+            href="../components/cards.html">
             <i class="ti ti-cards  text-xl"></i> <span>Card</span>
           </a>
-        </li>   
+        </li>
 
         <li class="sidebar-item">
-          <a class="sidebar-link gap-3 py-2 px-3  rounded-md w-full flex items-center hover:text-blue-600 hover:bg-blue-500" href="../components/forms.html"
-           >
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md w-full flex items-center hover:text-primary hover:bg-primary/15"
+            href="../components/forms.html">
             <i class="ti ti-file-description  text-xl"></i> <span>Forms</span>
           </a>
-        </li> 
+        </li>
 
         <li class="sidebar-item">
-          <a class="sidebar-link gap-3 py-2 px-3  rounded-md w-full flex items-center hover:text-blue-600 hover:bg-blue-500" href="../components/typography.html"
-           >
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md w-full flex items-center hover:text-primary hover:bg-primary/15"
+            href="../components/typography.html">
             <i class="ti ti-typography text-xl"></i> <span>Typography</span>
           </a>
-        </li>   
-        
+        </li>
+        <li
+          class="hs-accordion sidebar-item"
+          id="ui-accordion">
+          <a href="#ui"
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <i class="ti ti-layout-grid text-xl flex-shrink-0"></i> <span
+              class="hide-menu">Ui Elements</span>
+            <span class="hide-menu ms-auto">
+              <i
+                class="ti ti-chevron-down text-lg ms-auto  hs-accordion-active:hidden "></i>
+              <i
+                class="ti ti-chevron-up text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></i>
+            </span>
+          </a>
+
+          <div id="ui-accordion"
+            class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-accordion.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Accordion</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-badge.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Badge</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-button.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Buttons</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-breadcrumb.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Breadcrumb</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-carousel.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Curousel</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-chat-bubbles.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Chat Bubbles</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-dropdowns.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Dropdown</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-datepicker.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">DatePicker</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-devices.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Devices</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-grid.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Grid</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-lists.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Lists</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-link.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Link</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-modals.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Modals</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-notification.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Notification</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-offcanvas.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Offcanvas</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-progressbar.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Progressbar</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-pagination.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Pagination</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-ratings.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Ratings</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-scrollspy.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Scrollspy</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-spinner.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Spinner</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-stepper.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Stepper</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-skeleton.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Skeleton</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-tab.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Tab</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-typography.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Typography</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-tooltip-popover.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Tooltip & Popover</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-timeline.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Timeline</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-toasts.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Toasts</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </li>
+
+        <li
+          class="hs-accordion sidebar-item"
+          id="ui-accordion">
+          <a href="#cards"
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <i class="ti ti-cash text-xl flex-shrink-0"></i> <span
+              class="hide-menu">Ui Cards</span>
+            <span class="hide-menu ms-auto">
+              <i
+                class="ti ti-chevron-down text-lg ms-auto  hs-accordion-active:hidden "></i>
+              <i
+                class="ti ti-chevron-up text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></i>
+            </span>
+          </a>
+
+          <div id="ui-accordion"
+            class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-cards.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Basic Cards</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-card-customs.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Custom Cards</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/ui-card-weather.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Weather Cards</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
         <li class="text-xs font-bold mb-4 mt-8">
-          <i class="ti ti-dots nav-small-cap-icon text-lg hidden text-center"></i>
+          <i
+            class="ti ti-dots nav-small-cap-icon text-lg hidden text-center"></i>
+          <span>APPS</span>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/app-calendar.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-calendar text-xl"></i>
+              <span>Calendar</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/app-kanban.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-layout-kanban text-xl"></i>
+              <span>Kanban</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/app-chat.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-message-dots text-xl"></i>
+              <span>Chat</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/app-email.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-mail text-xl"></i>
+              <span>Email</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/app-notes.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-notes text-xl"></i>
+              <span>Notes</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/app-contact.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-phone text-xl"></i>
+              <span>Contact Table</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/app-contact2.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-list-details text-xl"></i>
+              <span>Contact List</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/app-invoice.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-file-text text-xl"></i>
+              <span>Invoice</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/page-user-profile.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-user-circle text-xl"></i>
+              <span>User Profile</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+
+        <li
+          class="hs-accordion sidebar-item"
+          id="ui-blog-accordion">
+          <a href="#blog"
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <i class="ti ti-chart-donut-3 text-xl flex-shrink-0"></i> <span
+              class="hide-menu">Blog</span>
+            <span class="hide-menu ms-auto">
+              <i
+                class="ti ti-chevron-down text-lg ms-auto  hs-accordion-active:hidden "></i>
+              <i
+                class="ti ti-chevron-up text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></i>
+            </span>
+          </a>
+
+          <div id="ui-blog-accordion"
+            class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/blog-posts.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Posts</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/blog-detail.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Details</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </li>
+
+        <li
+          class="hs-accordion sidebar-item"
+          id="ui-ecom-accordion">
+          <a href="#ecom"
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <i class="ti ti-basket text-xl flex-shrink-0"></i> <span
+              class="hide-menu">Ecommerce</span>
+            <span class="hide-menu ms-auto">
+              <i
+                class="ti ti-chevron-down text-lg ms-auto  hs-accordion-active:hidden "></i>
+              <i
+                class="ti ti-chevron-up text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></i>
+            </span>
+          </a>
+
+          <div id="ui-ecom-accordion"
+            class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/eco-shop.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Shop</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/eco-shop-detail.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Details</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/eco-product-list.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">List</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/eco-checkout.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Checkout</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </li>
+
+        <li class="text-xs font-bold mb-4 mt-8">
+          <i
+            class="ti ti-dots nav-small-cap-icon text-lg hidden text-center"></i>
+          <span>PAGES</span>
+        </li>
+
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/page-pricing.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-currency-dollar  text-xl"></i>
+              <span>Pricing</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/page-faq.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-help  text-xl"></i>
+              <span>FAQ</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/page-account-settings.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-user-circle  text-xl"></i>
+              <span>Account Setting</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/landingpage/index.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-app-window  text-xl"></i>
+              <span>Landing Page</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+
+        <li
+          class="hs-accordion sidebar-item"
+          id="ui-widget">
+          <a href="#widget"
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <i class="ti ti-layout text-xl flex-shrink-0"></i> <span
+              class="hide-menu">Widgets</span>
+            <span class="hide-menu ms-auto">
+              <i
+                class="ti ti-chevron-down text-lg ms-auto  hs-accordion-active:hidden "></i>
+              <i
+                class="ti ti-chevron-up text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></i>
+            </span>
+          </a>
+
+          <div id="ui-widget"
+            class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/widgets-cards.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Cards</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/widgets-banners.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Banner</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/widgets-charts.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Chart</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/widgets-feeds.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Feeds Widgets</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/widgets-apps.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Apps Widgets</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/widgets-data.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Data Widgets</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </li>
+
+        <li class="text-xs font-bold mb-4 mt-8">
+          <i
+            class="ti ti-dots nav-small-cap-icon text-lg hidden text-center"></i>
+          <span>FORMS</span>
+        </li>
+
+        <li
+          class="hs-accordion sidebar-item"
+          id="ui-widget">
+          <a href="#forms"
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <i class="ti ti-files text-xl flex-shrink-0"></i> <span
+              class="hide-menu">Form Elements</span>
+            <span class="hide-menu ms-auto">
+              <i
+                class="ti ti-chevron-down text-lg ms-auto  hs-accordion-active:hidden "></i>
+              <i
+                class="ti ti-chevron-up text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></i>
+            </span>
+          </a>
+
+          <div id="ui-widget"
+            class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/form-inputs.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Forms Input</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/form-input-groups.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Input Groups</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/form-checkbox-radio.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span
+                      class="hide-menu truncate overflow-hidden w-[120px]">Checkbox
+                      & Radios</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/form-input-grid.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Input Grid</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/form-input-number.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Input Number</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/form-advanced-password.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span
+                      class="hide-menu truncate overflow-hidden w-[120px]">Advanced
+                      Password</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </li>
+
+        <li class="text-xs font-bold mb-4 mt-8">
+          <i
+            class="ti ti-dots nav-small-cap-icon text-lg hidden text-center"></i>
           <span>AUTH</span>
         </li>
 
         <li class="sidebar-item">
-          <a class="sidebar-link gap-3 py-2 px-3  rounded-md w-full flex items-center hover:text-blue-600 hover:bg-blue-500" href="../pages/authentication-login.html"
-           >
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md w-full flex items-center hover:text-primary hover:bg-primary/15"
+            href="../pages/authentication-login.html">
             <i class="ti ti-login  text-xl"></i> <span>Login</span>
           </a>
         </li>
 
         <li class="sidebar-item">
-          <a class="sidebar-link gap-3 py-2 px-3  rounded-md w-full flex items-center hover:text-blue-600 hover:bg-blue-500" href="../pages/authentication-register.html"
-           >
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md w-full flex items-center hover:text-primary hover:bg-primary/15"
+            href="../pages/authentication-register.html">
             <i class="ti ti-user-plus  text-xl"></i> <span>Register</span>
           </a>
-        </li>  
+        </li>
+
+        <li
+          class="hs-accordion sidebar-item"
+          id="ui-auth">
+          <a href="#auth"
+            class="hs-accordion-toggle sidebar-link dropdown-menu-link  ">
+            <i class="ti ti-users text-xl flex-shrink-0"></i> <span
+              class="hide-menu">Auth Pages</span>
+            <span class="hide-menu ms-auto">
+              <i
+                class="ti ti-chevron-down text-lg ms-auto  hs-accordion-active:hidden "></i>
+              <i
+                class="ti ti-chevron-up text-lg ms-auto hs-accordion-active:block ml-auto hidden z-10 relative"></i>
+            </span>
+          </a>
+
+          <div id="ui-auth"
+            class="hs-accordion-content ">
+            <ul class>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/authentication-error.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Error</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/authentication-login.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Side Login</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/authentication-login2.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span
+                      class="hide-menu truncate overflow-hidden w-[120px]">Boxed
+                      Login</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/authentication-register.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Side Register</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/authentication-register2.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span class="hide-menu">Boxed Register</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/authentication-forgot-password.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span
+                      class="hide-menu truncate overflow-hidden w-[120px]">Side
+                      Forgot Password</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/authentication-forgot-password2.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span
+                      class="hide-menu truncate overflow-hidden w-[120px]">Boxed
+                      Forgot Password</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/authentication-two-steps.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span
+                      class="hide-menu truncate overflow-hidden w-[120px]">Side
+                      Two Steps</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/authentication-two-steps2.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span
+                      class="hide-menu truncate overflow-hidden w-[120px]">Boxed
+                      Two Steps</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+              <li class="pl-4 pr-3">
+                <a
+                  class="dropdown-submenu-link flex items-center justify-between"
+                  target="_blank"
+                  href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/authentication-maintenance.html">
+                  <span class="flex gap-2 items-center ">
+                    <i
+                      class="ti ti-circle flex-shrink-0 text-xs me-3 "></i>
+                    <span
+                      class="hide-menu truncate overflow-hidden w-[120px]">Maintenance</span>
+                  </span>
+                  <span
+                    class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </li>
 
         <li class="text-xs font-bold mb-4 mt-8">
-          <i class="ti ti-dots nav-small-cap-icon text-lg hidden text-center"></i>
+          <i
+            class="ti ti-dots nav-small-cap-icon text-lg hidden text-center"></i>
+          <span>TABLES & DATATABLE</span>
+        </li>
+
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/table-basic.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-border-all  text-xl"></i>
+              <span>Basic Table</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/table-layout-highlighted.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-table-row  text-xl"></i>
+              <span class="truncate overflow-hidden w-[120px]">Highlighted
+                Table</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/table-miscellaneous.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-table-alias  text-xl"></i>
+              <span class="truncate overflow-hidden w-[120px]"> Miscellaneous
+                Table</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/table-editable.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-brand-airtable  text-xl"></i>
+              <span class="truncate overflow-hidden w-[120px]">Editable
+                Table</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/table-datatable-basic.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-database  text-xl"></i>
+              <span class="truncate overflow-hidden w-[120px]">Basic Data
+                Table</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+
+        <li class="text-xs font-bold mb-4 mt-8">
+          <i
+            class="ti ti-dots nav-small-cap-icon text-lg hidden text-center"></i>
+          <span>CHARTS</span>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/chart-apex-line.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-chart-line  text-xl"></i>
+              <span class="truncate overflow-hidden w-[120px]">Line Chart</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/chart-apex-area.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-chart-area  text-xl"></i>
+              <span class="truncate overflow-hidden w-[120px]">Area Chart</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/chart-apex-bar.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-chart-bar  text-xl"></i>
+              <span class="truncate overflow-hidden w-[120px]">Bar Chart</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/chart-apex-pie.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-chart-pie-2  text-xl"></i>
+              <span class="truncate overflow-hidden w-[120px]">Pie Chart</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/chart-apex-radial.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-chart-arcs  text-xl"></i>
+              <span class="truncate overflow-hidden w-[120px]">Radial
+                Chart</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md  w-full flex items-center justify-between hover:text-primary hover:bg-primary/15"
+            target="_blank"
+            href="https://bootstrapdemos.adminmart.com/modernize-tailwind-pro/dist/main/chart-apex-radar.html">
+            <span class="flex gap-3 items-center">
+              <i class="ti ti-chart-radar  text-xl"></i>
+              <span class="truncate overflow-hidden w-[120px]">Radar
+                Chart</span>
+            </span>
+            <span
+              class="items-center gap-x-1.5 py-1 leading-3 px-2 rounded-md text-[10px] font-medium bg-secondary/30 text-secondary justify-end">Pro</span>
+          </a>
+        </li>
+
+        <li class="text-xs font-bold mb-4 mt-8">
+          <i
+            class="ti ti-dots nav-small-cap-icon text-lg hidden text-center"></i>
           <span>EXTRA</span>
         </li>
 
         <li class="sidebar-item">
-          <a class="sidebar-link gap-3 py-2 px-3  rounded-md w-full flex items-center hover:text-blue-600 hover:bg-blue-500" href="../pages/icons.html"
-           >
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md w-full flex items-center hover:text-primary hover:bg-primary/15"
+            href="../pages/icons.html">
             <i class="ti ti-mood-happy  text-xl"></i> <span>Icons</span>
           </a>
         </li>
 
         <li class="sidebar-item">
-          <a class="sidebar-link gap-3 py-2 px-3  rounded-md w-full flex items-center hover:text-blue-600 hover:bg-blue-500" href="../pages/sample-page.html"
-           >
+          <a
+            class="sidebar-link gap-3 py-3 px-3  rounded-md w-full flex items-center hover:text-primary hover:bg-primary/15"
+            href="../pages/sample-page.html">
             <i class="ti ti-aperture  text-xl"></i> <span>Sample Page</span>
           </a>
-        </li>        
+        </li>
 
       </ul>
+      
     </nav>
+    
   </div>
-</div>
-
-<!-- Bottom Upgrade Option -->
+  <!-- Bottom Upgrade Option -->
 <div class="m-6  relative">
-  <div class="bg-blue-500 p-5 rounded-md flex items-center justify-between">
-        <div>
-          <h5 class="text-base font-semibold text-gray-700 mb-3">Upgrade to Pro</h5>
-          <button class="text-xs font-semibold hover:bg-blue-700 text-white bg-blue-600 rounded-md  px-4 py-2">Buy Pro</button>
-        </div>
-        <div class="-mt-12 -mr-2">
-          <img src="../assets/images/profile/rocket.png" class="max-w-fit"  alt="profile" />
-        </div>
+  <div class="bg-primary/15 p-5 rounded-md flex items-center justify-between">
+    <div>
+      <h5 class="text-base font-semibold text-gray-700 mb-3">Check Pro
+        Version</h5>
+      <a href="https://adminmart.com/product/modernize-tailwind-nextjs-dashboard-template/?ref=56#product-demo-section" target="_blank"
+        class="text-xs font-semibold  text-white bg-primary hover:bg-blue-700/80 rounded-md  px-4 py-2">Check</a>
+    </div>
+    <div class="-mt-12 -mr-2">
+      <img src="../assets/images/profile/rocket.png" class="max-w-fit"
+        alt="profile" />
+    </div>
   </div>
 </div>
 <!-- </aside> -->
-			</aside>
+</div>
+
+
+				</aside>
 			<div class="w-full page-wrapper overflow-hidden">
 
 				<!--  Header Start -->
-				<header class="container full-container w-full text-sm   py-4">
+
 					<div class=" w-full">
 
 <!-- ========== HEADER ========== -->
+<header class="full-container w-full text-sm py-3 px-5 bg-white lg:sticky z-30">
+    <nav class=" w-full  flex items-center justify-between "
+        aria-label="Global">
+        <ul class="icon-nav flex items-center gap-4">
+            <li class="relative xl:hidden">
+                <a class="text-xl  icon-hover cursor-pointer text-heading"
+                    id="headerCollapse"
+                    data-hs-overlay="#application-sidebar-brand"
+                    aria-controls="application-sidebar-brand"
+                    aria-label="Toggle navigation" href="javascript:void(0)">
+                    <i class="ti ti-menu-2 relative z-1"></i>
+                </a>
+            </li>
 
-    <nav class=" w-full bg-gray-800  flex items-center justify-between" aria-label="Global">
-            <ul class="icon-nav flex items-center gap-4">
-                <li class="relative xl:hidden">
-                    <a class="text-xl  icon-hover cursor-pointer text-heading"
-                        id="headerCollapse" data-hs-overlay="#application-sidebar-brand"
-                        aria-controls="application-sidebar-brand" aria-label="Toggle navigation" href="javascript:void(0)">
-                        <i class="ti ti-menu-2 relative z-1"></i>
-                    </a>
-                </li>
-           
             <li class="relative">
                 
     <div class="hs-dropdown relative inline-flex [--placement:bottom-left] sm:[--trigger:hover]">
-        <a class="relative hs-dropdown-toggle inline-flex  icon-hover text-gray-600" href="#">
+        <a class="relative hs-dropdown-toggle inline-flex  icon-hover text-dark" href="#">
             <i class="ti ti-bell-ringing text-xl relative z-[1]"></i>
             <div
-                class="absolute inline-flex items-center justify-center  text-white text-[11px] font-medium  bg-blue-600 w-2 h-2 rounded-full -top-[1px] -right-[6px]">
+                class="absolute inline-flex items-center justify-center  text-white text-[11px] font-medium  bg-primary w-2 h-2 rounded-full -top-[1px] -right-[6px]">
             </div>
         </a>
-        <div class="card hs-dropdown-menu transition-[opacity,margin] border border-gray-400 rounded-md duration hs-dropdown-open:opacity-100 opacity-0 mt-2 min-w-max  w-[300px] hidden z-[12]"
+        <div class=" hs-dropdown-menu transition-[opacity,margin]  rounded-md duration hs-dropdown-open:opacity-100 opacity-0 mt-2 min-w-max  w-[300px] hidden "
             aria-labelledby="hs-dropdown-custom-icon-trigger">
             <div>
-               <h3 class="text-gray-600 font-semibold text-base px-6 py-3">Notification</h3>
+               <h3 class="text-dark font-semibold text-base px-6 py-3">Notification</h3>
                <ul class="list-none  flex flex-col">
                 <li>
-               <a href="#" class="py-3 px-6 block hover:bg-blue-500">
-                <p class="text-sm text-gray-600 font-semibold">Roman Joined the Team!</p>
+               <a href="#" class="py-3 px-6 block hover:bg-primary/15">
+                <p class="text-sm text-dark font-semibold">Roman Joined the Team!</p>
                 <p class="text-xs text-gray-500 font-medium">Congratulate him</p>
                </a>
                 </li>
                 <li>
-                <a href="#" class="py-3 px-6 block hover:bg-blue-500">
-                    <p class="text-sm text-gray-600 font-semibold">New message received</p>
+                <a href="#" class="py-3 px-6 block hover:bg-primary/15">
+                    <p class="text-sm text-dark font-semibold">New message received</p>
                     <p class="text-xs text-gray-500 font-medium">Salma sent you new message</p>
                 </a>
                 </li>
                 <li>
-                  <a href="#" class="py-3 px-6 block hover:bg-blue-500">
-                    <p class="text-sm text-gray-600 font-semibold">New Payment received</p>
+                  <a href="#" class="py-3 px-6 block hover:bg-primary/15">
+                    <p class="text-sm text-dark font-semibold">New Payment received</p>
                     <p class="text-xs text-gray-500 font-medium">Check your earnings</p>
                   </a>
                 </li>
                 <li>
-                 <a href="#" class="py-3 px-6 block hover:bg-blue-500">
-                    <p class="text-sm text-gray-600 font-semibold">Jolly completed tasks</p>
+                 <a href="#" class="py-3 px-6 block hover:bg-primary/15">
+                    <p class="text-sm text-dark font-semibold">Jolly completed tasks</p>
                     <p class="text-xs text-gray-500 font-medium">Assign her new tasks</p>
                  </a>
                 </li>
                 <li>
-                  <a href="#" class="py-3 px-6 block hover:bg-blue-500">
-                    <p class="text-sm text-gray-600 font-semibold">Roman Joined the Team!</p>
+                  <a href="#" class="py-3 px-6 block hover:bg-primary/15">
+                    <p class="text-sm text-dark font-semibold">Roman Joined the Team!</p>
                     <p class="text-xs text-gray-500 font-medium">Congratulate him</p>
                   </a>
                 </li>
@@ -218,43 +1919,54 @@
     </div>
 
             </li>
-            </ul>
+        </ul>
         <div class="flex items-center gap-4">
-          <a href="#" class="btn font-medium hover:bg-blue-700 py-2" aria-current="page">Download Free</a>
-            <div class="hs-dropdown relative inline-flex [--placement:bottom-right] sm:[--trigger:hover]">
-    <a class="relative hs-dropdown-toggle cursor-pointer align-middle rounded-full">
-        <img class="object-cover w-9 h-9 rounded-full" src="../assets/images/profile/user-1.jpg" alt=""
-            aria-hidden="true">
-    </a>
-    <div class="card hs-dropdown-menu transition-[opacity,margin] border border-gray-400 rounded-[7px] duration hs-dropdown-open:opacity-100 opacity-0 mt-2 min-w-max  w-[200px] hidden z-[12]"
-        aria-labelledby="hs-dropdown-custom-icon-trigger">
-        <div class="card-body p-0 py-2">
-            <a href="javscript:void(0)" class="flex gap-2 items-center px-4 py-[6px] hover:bg-blue-500">
+            <a
+                href="https://adminmart.com/product/modernize-tailwind-nextjs-dashboard-template/?ref=56#product-demo-section"
+                target="_blank"
+                class="btn font-medium hover:bg-blue-700/80 py-2"
+                aria-current="page">Check Pro Template</a>
+            
+
+<div class="m-1 hs-dropdown [--trigger:hover] relative inline-flex">
+
+    <img class="object-cover w-9 h-9 rounded-full "
+        src="../assets/images/profile/user-1.jpg" alt
+        aria-hidden="true">
+
+    <div
+        class="hs-dropdown-menu py-3 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden  bg-white shadow-md rounded-lg mt-2  after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full z-20 w-[200px]"
+        role="menu">
+        <div class="space-y-1">
+            <a href="javscript:void(0)"
+                class="flex gap-2 items-center px-4 py-2.5 hover:bg-primary/10">
                 <i class="ti ti-user text-gray-500 text-xl "></i>
-                <p class="text-sm text-gray-500">My Profile</p>
+                <p class="text-sm text-dark">My Profile</p>
             </a>
-            <a href="javscript:void(0)" class="flex gap-2 items-center px-4 py-[6px] hover:bg-blue-500">
+            <a href="javscript:void(0)"
+                class="flex gap-2 items-center px-4 py-2.5 hover:bg-primary/10">
                 <i class="ti ti-mail text-gray-500 text-xl"></i>
-                <p class="text-sm text-gray-500">My Account</p>
+                <p class="text-sm text-dark">My Account</p>
             </a>
-            <a href="javscript:void(0)" class="flex gap-2 items-center px-4 py-[6px] hover:bg-blue-500">
+            <a href="javscript:void(0)"
+                class="flex gap-2 items-center px-4 py-2.5 hover:bg-primary/10">
                 <i class="ti ti-list-check text-gray-500 text-xl "></i>
-                <p class="text-sm text-gray-500">My Task</p>
+                <p class="text-sm text-dark">My Task</p>
             </a>
             <div class="px-4 mt-[7px] grid">
-                <a href="../../pages/authentication-login.html" class="btn-outline-primary w-full hover:bg-blue-600 hover:text-white">Logout</a>
+                <a href="../pages/authentication-login.html"
+                    class="btn-outline-primary w-full hover:bg-blue-700/80 hover:text-white">Logout</a>
             </div>
-
         </div>
     </div>
 </div>
 
-
         </div>
     </nav>
+</header>
 
-  <!-- ========== END HEADER ========== --></div>
-				</header>
+<!-- ========== END HEADER ========== --></div>
+		
 				<!--  Header End -->
 
 				<!-- Main Content -->
@@ -262,31 +1974,31 @@
 					<div class="container full-container py-5 flex flex-col gap-6">
                         <div class="card">
 							<div class="card-body flex flex-col gap-6">
-								<h6 class="text-lg text-gray-600 font-semibold">Buttons</h6>
+								<h6 class="text-lg text-dark font-semibold">Buttons</h6>
 								<div class="card">
 									<div class="card-body flex flex-wrap gap-3">
-										<button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-blue-600 text-white hover:bg-blue-700 ">
+										<button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-primary text-white hover:bg-blue-700/80 ">
 										Primary
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-cyan-500 text-white hover:bg-cyan-600">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-secondary text-white hover:bg-cyan-500">
 											Secondary
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-teal-500 text-white hover:bg-teal-600">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-success text-white hover:bg-teal-500">
 											Success
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-yellow-500 text-white hover:bg-yellow-600">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-warning text-white hover:bg-yellow-600">
 											Warning
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-red-500 text-white hover:bg-red-600">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-error text-white hover:bg-red-500">
 											Danger
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-blue-300 text-white hover:bg-blue-400">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-info text-white hover:bg-blue-600">
 											Info
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-gray-600 text-white hover:bg-gray-700">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-gray-600 text-white hover:bg-gray-700">
 											Dark
 										  </button>										
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-transparent text-gray-600 hover:bg-gray-400">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-transparent text-dark hover:bg-gray-400">
 											Light
 										  </button>	
 										  <button type="button" class="inline-flex items-center gap-x-2 text-sm font-semibold rounded-md text-blue-600 hover:text-blue-700 ">
@@ -294,34 +2006,34 @@
 										  </button>									
 									</div>
 								</div>
-								<h6 class="text-lg text-heading font-semibold">Outline buttons</h6>
+								<h6 class="text-lg  font-semibold text-dark">Outline buttons</h6>
 								<div class="card">
 									<div class="card-body flex flex-wrap gap-3">
-										<button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-blue-600 text-blue-600 hover:border-blue-600 hover:text-white hover:bg-blue-600">
+										<button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-primary text-primary  hover:text-white hover:bg-blue-700/80">
 											Primary
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-cyan-500 text-cyan-500 hover:border-cyan-500 hover:text-white hover:bg-cyan-500">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-secondary text-secondary hover:border-cyan-500 hover:text-white hover:bg-cyan-500">
 											Secondary
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-teal-500 text-teal-500 hover:border-teal-500 hover:text-white hover:bg-teal-500 ">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-success text-success hover:border-teal-500 hover:text-white hover:bg-teal-500 ">
 											Success
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border text-yellow-500 hover:border-yellow-500 hover:text-white hover:bg-yellow-500 border-yellow-500">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border text-warning hover:border-warning hover:text-white hover:bg-yellow-500 border-yellow-500">
 											Warning
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-red-500 text-red-500 hover:border-red-500 hover:text-white hover:bg-red-500">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-error text-error hover:border-red-500 hover:text-white hover:bg-red-500">
 											Danger
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-blue-300 text-blue-300  hover:border-blue-300 hover:text-white hover:bg-blue-300">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-info text-info  hover:border-blue-300 hover:text-white hover:bg-blue-700">
 											Info
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border text-gray border-gray-700 hover:border-gray-700 hover:text-white hover:bg-gray-700">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border text-gray border-gray-700 hover:border-gray-700 hover:text-white hover:bg-gray-700">
 											Dark
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-gray-200 text-gray-200 hover:border-transparent hover:text-gray-500 hover:bg-transparent">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-gray-200 text-gray-200 hover:border-transparent hover:text-gray-500 hover:bg-transparent">
 											Light
 										  </button>
-										  <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent text-gray-500 hover:border-transparent hover:text-blue-600">
+										  <button type="button" class="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent text-gray-500 hover:border-transparent hover:text-blue-600">
 											Link
 										  </button>
 									</div>
@@ -344,6 +2056,7 @@
 <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
 <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
 <script src="../assets/libs/iconify-icon/dist/iconify-icon.min.js"></script>
+<script src="../assets/libs/preline/dist/preline.js"></script>
 <script src="../assets/libs/@preline/dropdown/index.js"></script>
 <script src="../assets/libs/@preline/overlay/index.js"></script>
 <script src="../assets/js/sidebarmenu.js"></script>

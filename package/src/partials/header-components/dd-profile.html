@@ -1,28 +1,34 @@
-<div class="hs-dropdown relative inline-flex [--placement:bottom-right] sm:[--trigger:hover]">
-    <a class="relative hs-dropdown-toggle cursor-pointer align-middle rounded-full">
-        <img class="object-cover w-9 h-9 rounded-full" src="@@webRoot/assets/images/profile/user-1.jpg" alt=""
-            aria-hidden="true">
-    </a>
-    <div class="card hs-dropdown-menu transition-[opacity,margin] border border-gray-400 rounded-[7px] duration hs-dropdown-open:opacity-100 opacity-0 mt-2 min-w-max  w-[200px] hidden z-[12]"
-        aria-labelledby="hs-dropdown-custom-icon-trigger">
-        <div class="card-body p-0 py-2">
-            <a href="javscript:void(0)" class="flex gap-2 items-center px-4 py-[6px] hover:bg-blue-500">
+
+
+<div class="m-1 hs-dropdown [--trigger:hover] relative inline-flex">
+
+    <img class="object-cover w-9 h-9 rounded-full "
+        src="@@webRoot/assets/images/profile/user-1.jpg" alt
+        aria-hidden="true">
+
+    <div
+        class="hs-dropdown-menu py-3 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden  bg-white shadow-md rounded-lg mt-2  after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full z-20 w-[200px]"
+        role="menu">
+        <div class="space-y-1">
+            <a href="javscript:void(0)"
+                class="flex gap-2 items-center px-4 py-2.5 hover:bg-primary/10">
                 <i class="ti ti-user text-gray-500 text-xl "></i>
-                <p class="text-sm text-gray-500">My Profile</p>
+                <p class="text-sm text-dark">My Profile</p>
             </a>
-            <a href="javscript:void(0)" class="flex gap-2 items-center px-4 py-[6px] hover:bg-blue-500">
+            <a href="javscript:void(0)"
+                class="flex gap-2 items-center px-4 py-2.5 hover:bg-primary/10">
                 <i class="ti ti-mail text-gray-500 text-xl"></i>
-                <p class="text-sm text-gray-500">My Account</p>
+                <p class="text-sm text-dark">My Account</p>
             </a>
-            <a href="javscript:void(0)" class="flex gap-2 items-center px-4 py-[6px] hover:bg-blue-500">
+            <a href="javscript:void(0)"
+                class="flex gap-2 items-center px-4 py-2.5 hover:bg-primary/10">
                 <i class="ti ti-list-check text-gray-500 text-xl "></i>
-                <p class="text-sm text-gray-500">My Task</p>
+                <p class="text-sm text-dark">My Task</p>
             </a>
             <div class="px-4 mt-[7px] grid">
-                <a href="../../pages/authentication-login.html" class="btn-outline-primary w-full hover:bg-blue-600 hover:text-white">Logout</a>
+                <a href="@@webRoot/pages/authentication-login.html"
+                    class="btn-outline-primary w-full hover:bg-blue-700/80 hover:text-white">Logout</a>
             </div>
-
         </div>
     </div>
 </div>
-
