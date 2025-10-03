@@ -196,7 +196,7 @@ Modernize Tailwind Dashboard Template
 
 <!-- Licensing of Template -->
 # Licensing
-- <p>Copyright 2024 Adminmart <a href="https://adminmart.com/?ref=5">https://adminmart.com/</a></p>
+- <p>Copyright 2025 Adminmart <a href="https://adminmart.com/?ref=5">https://adminmart.com/</a></p>
 - <p>Licensed under MIT <a href="https://adminmart.com/license/?ref=5">https://adminmart.com/license/</a></p>
 
 
@@ -209,3 +209,5 @@ Modernize Tailwind Dashboard Template
 - <p>Quora: <a href="https://www.quora.com/profile/Adminmart/?ref=5">https://www.quora.com/profile/Adminmart</a></p>
 - <p>Stack-Overflow: <a href="https://stackoverflow.com/users/20055119/adminmart/?ref=5">https://stackoverflow.com/users/20055119/adminmart</a></p>
 - <p>Reddit: <a href="https://www.reddit.com/user/adminmart/?ref=5">https://www.reddit.com/user/adminmart</a></p>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
