@@ -2,8 +2,8 @@
 Modernize Tailwind Dashboard Template
 
 <!-- Main image of Template -->
-<a target="_blank" href="https://adminmart.com/product/modernize-free-tailwind-admin/?ref=5">
-  <img src="https://adminmart.com/wp-content/uploads/2024/01/modernize-tailwind.jpg" />
+<a target="_blank" href="https://adminmart.com/product/modernize-free-tailwind-admin?ref=56">
+  <img src="https://images.adminmart.com/templates/free/modernize/modernize-tailwind.webp" />
 </a>
 
 
@@ -134,8 +134,8 @@ Modernize Tailwind Dashboard Template
 
 # Upgrade to Premium version
 
-<a target="_blank" href="https://adminmart.com/product/modernize-tailwind-dashboard-template/?ref=5">
-  <img src="https://adminmart.com/wp-content/uploads/2024/03/modernize-tailwind-dashboard-template-am.jpg" alt="">
+<a target="_blank" href="https://adminmart.com/product/modernize-tailwind-dashboard-template/?ref=56">
+  <img src="https://images.adminmart.com/templates/pro/modernize/Modernize-Nextjs-Tailwind-nextjs_updated.webp" alt="">
 </a>
 <p>
   Checkout our premium version of Modernize Tailwind Dashboard Template for lots more features and ready to use page templates.<br>
@@ -156,23 +156,23 @@ Modernize Tailwind Dashboard Template
 <tbody>
 <tr>
 <td>
-  <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/?ref=5" rel="nofollow" width="150px">
-    <img src="https://adminmart.com/wp-content/uploads/2023/02/modernize-bootstrap-5-admin-template.png" alt="" style="max-width:150px;">
+  <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/?ref=56" rel="nofollow" width="150px">
+    <img src="https://images.adminmart.com/templates/pro/modernize/modernize-bootstrap-5-admin-template-min.webp" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://adminmart.com/product/modernize-react-mui-dashboard-theme/?ref=5" rel="nofollow" width="150px">
-    <img src="https://adminmart.com/wp-content/uploads/2023/01/image_2023_01_26T10_19_25_019Z.png" alt="" style="max-width:150px;">
+  <a href="https://adminmart.com/product/modernize-react-mui-dashboard-theme/?ref=56" rel="nofollow" width="150px">
+    <img src="https://images.adminmart.com/templates/pro/modernize/Modernize-React-MUI-19_new.webp" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://adminmart.com/product/modernize-next-js-admin-dashboard/?ref=5" rel="nofollow" width="150px">
-    <img src="https://adminmart.com/wp-content/uploads/2023/03/modernize-next-js-admin-dashboard-1-min.png" alt="" style="max-width:150px;">
+  <a href="https://adminmart.com/product/modernize-next-js-admin-dashboard/?ref=56" rel="nofollow" width="150px">
+    <img src="https://images.adminmart.com/templates/pro/modernize/Modernize-Nextjs_withour_redux.webp" alt="" style="max-width:150px;">
   </a>
 </td>
   <td>
-  <a href="https://adminmart.com/product/modernize-nuxt-js-admin-dashboard/?ref=5" rel="nofollow" width="150px">
-    <img src="https://adminmart.com/wp-content/uploads/2023/02/modernize-nuxt-js-admin-dashboard.png" alt="" style="max-width:150px;">
+  <a href="https://adminmart.com/product/modernize-nuxt-js-admin-dashboard/?ref=56" rel="nofollow" width="150px">
+    <img src="https://images.adminmart.com/templates/pro/modernize/modernize-nuxt-js-admin-dashboard.webp" alt="" style="max-width:150px;">
   </a>
 </td>
 </td>
